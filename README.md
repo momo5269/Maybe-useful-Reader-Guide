@@ -59,7 +59,7 @@
 
 **PC**
 
-图书	[Acrobat](https://pan.baidu.com/s/1MhHNS1ixn5ijj1hwWh4PGQ)（[Pitstop](http://www.52read.org/forum.php?mod=viewthread&tid=687)	[Quite Imposing](http://www.cnprint.org/bbs/thread/77/285247/)）	[ABBYY PDF Transformer+](https://www.52pojie.cn/thread-831415-1-1.html)
+图书	[Acrobat](https://pan.baidu.com/s/1MhHNS1ixn5ijj1hwWh4PGQ)（[Pitstop](http://www.52read.org/forum.php?mod=viewthread&tid=687) | [Quite Imposing](http://www.cnprint.org/bbs/thread/77/285247/)）	[ABBYY PDF Transformer+](https://www.52pojie.cn/thread-831415-1-1.html)
 
 图书	[PDF补丁丁](https://pdfpatcher.cnblogs.com/) | [PDF-XChange Viewer](https://www.tracker-software.com/product/pdf-xchange-viewer)  | [SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader.html) | [CAJViewer](http://cajviewer.cnki.net/) | [超星阅读器](http://ssreader.chaoxing.com/)
 
