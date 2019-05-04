@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>基本有用的电子阅读指南 v0.2 加竖线</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 13px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://yandex.st/highlightjs/6.2/highlight.min.js"></script>
+ 
+ 
+<script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+ $(document).ready(function(){
+      $("h2,h3,h4,h5,h6").each(function(i,item){
+        var tag = $(item).get(0).localName;
+        $(item).attr("id","wow"+i);
+        $("#category").append('<a class="new'+tag+'" href="#wow'+i+'">'+$(this).text()+'</a></br>');
+        $(".newh2").css("margin-left",0);
+        $(".newh3").css("margin-left",20);
+        $(".newh4").css("margin-left",40);
+        $(".newh5").css("margin-left",60);
+        $(".newh6").css("margin-left",80);
+      });
+     
+       $(".book-body").html($(".book-body").nextAll())
+ });
+</script>
+<style type="text/css">
+ 
+@media (max-width: 1600px) {
+    .book-body {
+       padding-left:200px;
+    }
+}
+ 
+@media (max-width: 1400px) {
+    .book-body {
+       padding-left:200px;
+    }
+}
+ 
+@media (max-width: 1200px) {
+    .book-body {
+       padding-left:300px;
+    }
+}
+@media (max-width: 700px) {
+    .book-body {
+       padding-left:0px;
+    }
+}
+@media (min-width: 700px) {
+	#category{
+	    position: fixed;
+	    left: 20px;
+	    top:0;
+	    height: 100%;
+	    overflow-y: scroll;
+	}
+}
+ 
+@media (-webkit-max-device-pixel-ratio: 1) {
+    ::-webkit-scrollbar-track-piece {
+        background-color:#FFF
+    }
+ 
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px
+    }
+ 
+    ::-webkit-scrollbar-thumb {
+        background-color: #c2c2c2;
+        background-clip: padding-box;
+        min-height: 28px
+    }
+ 
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #A0A0A0
+    }
+}
+</style>
+<a href="javascript:scroll(0,0)" style="position:fixed;float:right;right:32px;top:30%">返回顶部</a> 
+<div id="category" class="book-summary"></div>
+<div class="book-body">
+</div>
+</head>
+<body>
+<h1>基本有用的电子阅读指南</h1>
+<hr />
+<p>​																																																											writing by momo5269</p>
+<h2>说明</h2>
+<p>旨在介绍各类阅读软件供大家选择，PC / 安卓为主。有颜色的文本可点击导向官网或下载，没有的百度也有结果。</p>
+<p>本文使用<a href="https://www.typora.io/"><code>Typora</code></a>  生成，建议用其阅读和输出文件，推荐<a href="http://theme.typora.io/theme/Vue/">VUE</a>主题。</p>
+<p><a href="http://creativecommons.net.cn/licenses/licenses_exp/"><code>署名-非商业性使用-相同方式共享</code></a></p>
+<p><a href="https://www.lanzous.com/b597086"><code>长期更新地址</code></a></p>
+<p><code>0.2 重点说明
+  1.不再提供HTML与PDF，带侧栏的HTML输出请详见附件。本文代码块部分需自行调整；
+  2.部分链接更新为蓝奏云，加入大量不稳定链接。失效请见谅。但有名字基本搜得到；
+  3.开始包含少量破解链接，盗版不适者请注意。亦有免费替代方案；
+  4.附件转为蓝奏云提供。
+  5.新章节：实用工具</code></p>
+<h2>速览</h2>
+<p>这么长怎么可能看得完！于是有了速览版，点击即可进入下载页。（安卓应用可能需要翻墙）</p>
+<h3>PC</h3>
+<blockquote>
+<p>图书	<a href="https://www.foxitsoftware.cn/products/reader/">福昕阅读器</a>（参考下文） | <a href="https://www.lanzous.com/i3zqntg">UnicornViewer</a> | <a href="https://calibre-ebook.com/">Calibre</a> | <a href="http://www.skycn.com/soft/appid/28141.html">Mobipocket Reader</a></p>
+<p>漫画	<a href="http://www.bandisoft.com/honeyview/">HoneyView</a> | <a href="http://www.cnblogs.com/stronghorse/">ComicsViewer</a></p>
+</blockquote>
+<h3>安卓</h3>
+<blockquote>
+<p>图书	<a href="https://www.coolapk.com/apk/com.adobe.reader">Adobe Reader</a> | <a href="https://www.coolapk.com/apk/com.flyersoft.moonreaderp">静读天下</a> | <a href="https://www.lanzous.com/i3zqnkh">閑讀書Pdg</a></p>
+<p>漫画	<a href="https://play.google.com/store/apps/details?id=com.viewer.comicscreen">ComicScreen</a> | <a href="https://play.google.com/store/apps/details?id=com.cyo.comicrack.viewer.free">ComicRack</a></p>
+</blockquote>
+<h3>补充</h3>
+<hr />
+<p><strong>PC</strong></p>
+<p>图书	<a href="https://pan.baidu.com/s/1MhHNS1ixn5ijj1hwWh4PGQ">Acrobat</a>（<a href="http://www.52read.org/forum.php?mod=viewthread&amp;tid=687">Pitstop</a> | <a href="http://www.cnprint.org/bbs/thread/77/285247/">Quite Imposing</a>） | <a href="http://www.52read.org/forum.php?mod=viewthread&amp;tid=1320">ABBYY PDF Transformer+</a></p>
+<p>图书	<a href="https://pdfpatcher.cnblogs.com/">PDF补丁丁</a> | <a href="https://www.tracker-software.com/product/pdf-xchange-viewer">PDF-XChange Viewer</a>  | <a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">SumatraPDF</a> | <a href="http://cajviewer.cnki.net/">CAJViewer</a> | <a href="http://ssreader.chaoxing.com/">超星阅读器</a></p>
+<p>漫画	<a href="http://comicrack.cyolito.com/">ComicRack</a> | <a href="http://www.cdisplayex.com/">CDisplayEx</a> | <a href="http://soft.onlinedown.net/soft/1150480.htm">MangaMeeya</a></p>
+<p><strong>安卓</strong></p>
+<p>图书	<a href="https://github.com/koreader/koreader/wiki/KOReader%E7%BB%B4%E5%9F%BA">KOreader</a> | <a href="https://www.amazon.cn/gp/digital/fiona/kcp-landing-page/">Kindle</a> | <a href="http://cajviewer.cnki.net/">CAJViewer</a> | <a href="https://www.coolapk.com/apk/com.gedoor.monkeybook">阅读</a> | <a href="http://www.apabi.cn/download/">阿帕比阅读器</a></p>
+<p>漫画	<a href="https://soft.shouji.com.cn/down/21244.html">PerfectViewer</a> | <a href="https://play.google.com/store/apps/details?id=com.progdigy.cdisplay.free">CDisplay</a></p>
+<h2>PDF</h2>
+<h3>阅读</h3>
+<hr />
+<p>考虑到各种类型大小的打开/浏览速度、文本复制、书签批注，基本编辑等功能。</p>
+<h4><a href="https://acrobat.adobe.com/cn/zh-Hans/acrobat.html">Acrobat</a></h4>
+<hr />
+<p>功能最全，对应的启动速度较慢。仅阅读器<a href="https://acrobat.adobe.com/cn/zh-Hans/acrobat/pdf-reader.html">Acrobat Reader DC</a>（下载记得取消勾选！）</p>
+<p><a href="https://acrobat.adobe.com/cn/zh-Hans/acrobat.html"><code>Acrobat Pro</code></a>目前分为XI和DC两个版本，个人选择的是XI。（可在<a href="https://www.weibo.com/vposy">weibo</a>寻找直装版 (2018SP)）</p>
+<p><a href="http://www.52read.org/forum.php?mod=viewthread&amp;tid=2561"><code>minipdf</code></a> 辅助软件，安装Acrobat后，可用此软件浏览散页PDF，或对同目录下PDF快速切换预览。</p>
+<h4><a href="https://www.foxitsoftware.cn/products/reader/">福昕阅读器</a></h4>
+<hr />
+<p>知名不用多谈。除基本功能表现优异外，对于（嵌入）字体缺失、结构受损、文档描述错误等情况也有极佳的兼容性，其他阅读器如Acrobat可能会乱码或报错无法打开。各版本也有绿化/便携版方便使用。</p>
+<p>以下介绍常见版本，具体差异请查询<a href="http://www.foxitsoftware.cn/products/reader/version_history.php">版本历史</a></p>
+<p><a href="https://www.foxitsoftware.cn/products/reader/"><code>稳定版</code></a> 	表现稳定，190M左右。目前版本为9.2.x，老机器不推荐。</p>
+<p><a href="https://www.foxitsoftware.cn/products/reader-plus/"><code>领鲜版</code></a> 	 新功能首发，200M左右。持续更新，求稳定不推荐。</p>
+<p><code>1-3</code>	十分精巧，仅1-3M。各类PE和以前Ghost系统常带，兼容一般。适合PE环境或偶尔使用。</p>
+<p><a href="http://www.pc6.com/softview/SoftView_11191.html"><code>4.3</code></a>	小巧轻快，10M左右。小概率会有兼容问题，如较新的图文混排。若提示更新，可添加<a href="https://zhouqiang128.iteye.com/blog/1757546">东亚语言包</a>解决。</p>
+<p><a href="https://www.xiazaiba.com/dl/27103.html"><code>6-7</code></a>    100M左右，存在共同BUG：打开LaTeX编写的PDF可能导致报错或闪退。另外，从<code>7</code>开始仅有Ribbon界面。</p>
+<p><code>福昕风腾PDF套件金山版</code>	响应较快，表现稳定，100M左右。但有上述6-7的BUG，且加载特大文件时操作偶尔会导致崩溃。</p>
+<h4><a href="https://www.tracker-software.com/product/pdf-xchange-viewer">PDF-XChange Viewer</a></h4>
+<hr />
+<p>阅读、标注等方面可与福昕匹敌，书签甚至优于福昕风腾金山版。但双层PDF的搜索效率较差（需要多等一会）</p>
+<p>不含OCR仅15M左右，有原生便携版。</p>
+<p><a href="https://www.gaaiho.com/index.php/zh-cn/products/reader/pdf-reader-pc/overview"><code>文电通</code></a> 和PDFXCview类似，各方面优异，但同样输在PDF搜索（不仅是双层PDF）</p>
+<h4><a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">SumatraPDF</a></h4>
+<hr />
+<p>麻雀虽小，五脏俱全。小巧轻快（6M）原生便携，支持DJVU与EPUB。但epub排版不好，虽有<a href="https://github.com/jijinggang/sumatrapdf"><code>中文显示优化版</code></a>但仍不算好用。</p>
+<p><a href="http://www.skycn.com/soft/appid/7765.html"><code>百度阅读器精简版</code></a> 同样小巧轻快。除极少数双层PDF的加载外（可通过acrobat另存解决）近乎完美，但缺少视图布局（如单页连续、对开）使得不如SumatraPDF好用。</p>
+<h4><a href="https://www.cnblogs.com/stronghorse/p/4913470.html">UnicornViewer</a></h4>
+<hr />
+<p><a href="http://www.cnblogs.com/stronghorse/">老马</a>开发的适用于PDG/PDF的阅读器，支持图像增强，<strong>臻于完美</strong>。</p>
+<p>由于PDF阅读与unicode仅高版本支持，目前无法取得（论坛关停中），所以放在末尾介绍。</p>
+<p>最后的公开版本（0.12j）可在<a href="http://bbs.gxsd.com.cn/forum.php?mod=viewthread&amp;tid=352757">国学数典</a>或<a href="https://www.lanzous.com/i3zqntg">蓝奏云</a>下载。</p>
+<h4>其他需求</h4>
+<hr />
+<p><a href="http://www.zhizhireader.com/"><code>知之阅读</code></a></p>
+<p>批注标记不记录在PDF文件中，使得成为特殊需要的首选。免费软件。</p>
+<p>类似选择：<a href="http://cajviewer.cnki.net/">CAJViewer</a> 不够易用；<a href="https://www.bluebeam.com/solutions/revu">Revu</a> 功能过分，但是收费；<a href="https://www.pdfannotator.com/en/">PDF Annotator</a>，同样收费。</p>
+<p><a href="https://github.com/QL-Win/QuickLook"><code>QuickLook</code></a></p>
+<p>按下空格对文件快速预览。同类选择：<a href="https://sourceforge.net/projects/ccseer/">Seer</a></p>
+<p><a href="http://www.apabi.cn/download/"><code>阿帕比阅读器</code></a></p>
+<p>可以正确显示某些早期大样文件（如S2）转换的PDF文本与书签，如列宁全集，但软件本身一般。</p>
+<p>附大样文件阅读器：<a href="http://www.skycn.com/soft/appid/30515.html">大样文件阅读器</a>、<a href="http://www.onlinedown.net/soft/1162551.htm">书生阅读器</a>。</p>
+<p><a href="https://www.apple.com/cn/macos/mojave/"><code>For MacOS</code></a></p>
+<p><a href="https://get.adobe.com/cn/reader/otherversions/">Acrobat</a> | <a href="https://www.foxitsoftware.com/pdf-editor-mac/">福昕</a> | <a href="https://pdf.wondershare.cn/pdfelement-mac/">PDFelement</a> |  <a href="https://www.pdfexpert.cn/">PDF Expert</a> | <a href="https://smilesoftware.com/pdfpen">PDFpen</a></p>
+<p>了解不多，部分可访问<a href="https://www.naodai.org/">脑袋瓜子</a>下载</p>
+<h4>移动平台</h4>
+<hr />
+<p><strong>安卓</strong></p>
+<p><a href="https://www.coolapk.com/apk/com.adobe.reader"><code>Adobe Reader</code></a> | <a href="https://www.foxitsoftware.cn/downloads/"><code>福昕</code></a> | <a href="http://www.duokan.com/product"><code>多看阅读</code></a> | <a href="https://soft.shouji.com.cn/down/22185.html">智器阅读</a> | <a href="http://www.apabi.cn/download/">阿帕比</a> | <a href="https://www.coolapk.com/apk/cn.wps.moffice_eng">WPS</a>	个人移动平台关注不多，Adobe已经足够。</p>
+<p><strong>苹果</strong></p>
+<p><a href="https://itunes.apple.com/cn/app/adobe-acrobat-reader-%E6%9F%A5%E7%9C%8B-%E5%88%9B%E5%BB%BA%E5%92%8C%E8%BD%AC%E6%8D%A2-pdf/id469337564?mt=8"><code>Acrobat</code></a> | <a href="https://itunes.apple.com/cn/app/pdf-reader-6-premium-wen-jian/id909254807?mt=8"><code>PDF Markup Cloud</code></a></p>
+<h3>功能</h3>
+<hr />
+<p>通常包括：页面处理、内容编辑、体积优化、文本识别、导入导出、分割合并、书签批注、信息处理、水印加密等等，配合插件还可以满足各类印前需求。但个人需求不多，又以简单绿色为目标，因此适用范围有限。</p>
+<p>本章链接可能非官网。</p>
+<h4>全功能</h4>
+<hr />
+<p><a href="https://acrobat.adobe.com/cn/zh-Hans/acrobat.html">Acrobat</a>  | <a href="http://editor.foxitsoftware.cn/?agent=foxit&amp;MD=menu">福昕编辑器</a> | <a href="https://www.tracker-software.com/product/pdf-xchange-editor">PDF-XChange Editor</a>等。</p>
+<p><strong>首选</strong>：<a href="https://pan.baidu.com/s/1MhHNS1ixn5ijj1hwWh4PGQ"><code>Acrobat</code></a> 及其插件<a href="http://www.52read.org/forum.php?mod=viewthread&amp;tid=687"><code>Pitstop</code></a>+<a href="http://www.epinv.com/post/6271.html"><code>QuiteImposing</code></a>、 可选插件<a href="https://www.jb51.net/softs/580703.html"><code>PDFToolbox</code></a></p>
+<h4>多功能</h4>
+<hr />
+<p>各类简单轻巧的绿色工具，加粗为长。仅为列举，排名不分先后。优选将在<strong>扫描图书优化</strong>中举出。</p>
+<p><a href="http://pdfpatcher.cnblogs.com/"><code>PDF补丁丁</code></a>	<strong>书签/信息编辑</strong>、<strong>导出图片<strong>、分割合并、图片生成PDF、替换/嵌入字库、分析结构、</strong>OCR目录生成书签</strong>。</p>
+<p><a href="https://github.com/Mararsh/MyBox"><code>MyBox</code></a>	<strong>导出图片</strong>、图片生成PDF、压缩PDF中的图片、分割合并、提取文本等。</p>
+<p><a href="http://www.cnblogs.com/stronghorse/">pdftoy</a>	<em>目前无法取得</em>	<strong>转为图片<strong>、</strong>导出图片</strong>、裁剪页面、书签相关、<strong>流过滤</strong>（可移除正则指定的对象）。</p>
+<p><a href="https://pdfsam.org/">PDFSAM</a>	<strong>分割合并</strong>、提取、裁剪、旋转。需要<a href="https://www.java.com/en/download/manual.jsp">Java运行库</a></p>
+<p><a href="https://www.52pojie.cn/forum.php?mod=viewthread&amp;tid=871724">PDFShaper</a>	<em>收费</em>	转换格式、分割合并、导出图片、提取文本、旋转裁剪、提取删除、加密解锁、水印签名等。</p>
+<p><a href="http://www.wofficebox.com/">万彩办公大师</a>	分割、合并、提取、转换、纠偏、添加水印等，添加页码和解密功能较弱。</p>
+<p><a href="https://www.portablesoft.org/tracker-pdf-tools/">Tracker PDF-Tools</a>	<em>收费</em> 	转换格式、分割合并、提取页面、图片生成PDF等。</p>
+<p><a href="https://www.rttsoftware.com/shelltools.html">PDFShellTools</a>	<em>收费，试用30天，无破解</em>	<strong>导出图片<strong>、</strong>图片生成PDF</strong>、<strong>分割合并</strong>、提取、裁剪、旋转…功能全面。</p>
+<h4>单功能</h4>
+<hr />
+<p><a href="https://www.0daydown.com/10/753529.html"><code>PDF Password Remover</code></a>	解锁保护	<em>收费</em>	基于开源的<a href="http://qpdf.sourceforge.net/"><code>QPDF</code></a>。</p>
+<p><a href="https://www.52pojie.cn/thread-840478-1-1.html"><code>pdfFactory</code></a>	<a href="https://www.pdfforge.org/pdfcreator">PDFCreator</a> | <a href="http://www.tinypdf.com/">tinyPDF</a> | <a href="http://www.dopdf.com/">doPDF</a>	均为虚拟打印机，可能收费。</p>
+<p><a href="https://www.cnblogs.com/elliottzheng/p/9060159.html"><code>CopyTranslator</code></a>	复制后联网翻译。适用于PDF，会自动优化排版。（非跨平台可用老版本 v0.0.7）</p>
+<p><a href="http://www.skycn.com/soft/appid/39328.html"><code>BeCyPDFMetaEdit</code></a>	文件信息编辑</p>
+<p><a href="http://www.upantool.com/qita/pdf/12470.html"><code>3-Heights PDF Repair</code></a>	PDF文件修复	<em>收费</em></p>
+<p><a href="https://www.52pojie.cn/thread-632871-1-1.html">PDF Image Extraction Wizard</a>	导出图片	<em>收费</em></p>
+<p><a href="http://www.a-pdf.com/deskew/">A-PDF Deskew</a> 修正倾斜（纠偏）	<em>收费</em></p>
+<p><a href="https://www.52pojie.cn/thread-849027-1-1.html">SCITranslate10 VIP</a>	论文翻译	<em>收费</em></p>
+<p><a href="https://www.52pojie.cn/thread-687740-1-1.html">PDF Reducer Pro</a>	压缩大小	<em>收费</em></p>
+<p><a href="https://www.0daydown.com/02/128753.html">Rapid PDF Count</a> 	统计页数	 <em>收费</em></p>
+<p><a href="http://www.willus.com/k2pdfopt/">k2pdfopt</a>	重排，适配Kindle</p>
+<p><a href="http://www.onlinedown.net/soft/23434.htm">PS22PDF</a>	大样文件转换</p>
+<blockquote>
+<p>精力有限，未介绍转换工具、移动平台、文件类库等，链接若不太好，请另行搜索。</p>
+</blockquote>
+<h4>在线工具</h4>
+<hr />
+<p><a href="https://www.ilovepdf.com/zh-cn"><code>iLovePDF</code></a> | <a href="https://www.pdf365.cn/?agent=foxit&amp;MD=menu"><code>PDF365</code></a>/ <a href="https://online.foxitsoftware.com/view-and-edit?fromcwebtools=direct">FoxitOnline</a> | <a href="https://smallpdf.com/cn">SmallPDF</a></p>
+<h4>图片编辑</h4>
+<hr />
+<p>读者可能奇怪，明明是PDF编辑，为什么会有图片编辑软件？ </p>
+<p>因为扫描图书多数本质是图片，导出编辑可能用到。以下也包括专门的扫描图书优化。</p>
+<p><a href="https://yun.baidu.com/s/1qXFS9dy">ComicEnhancerPro</a>	所有常用功能，如色彩调整、切边对齐，<strong>批量最快</strong></p>
+<p><a href="https://pan.baidu.com/s/1pZRf_KxOjlQo9K0zuvuHcg">PhotoShop</a>	自动化裁剪、色阶，图章修封面  <a href="https://www.saier.me/">CLIP STUDIO PAINT</a>  去杂点，但不推荐  <a href="https://www.microsoft.com/zh-cn">画图</a>清空图片</p>
+<p><a href="http://www.glorylogic.com/image-tuner.html">ImageTuner</a> | <a href="https://www.xnview.com/en/xnconvert/">XnConvert</a> | <a href="http://www.faststone.org">FSResizer</a> | <a href="https://github.com/Mararsh/MyBox">Mybox</a>	批量裁剪、JPG压缩转换</p>
+<p><a href="https://www.lanzous.com/i3ery5i">Hornil StylePix</a> | <a href="http://www.dayanzai.me/acdsee-pro.html">ACDSee(Photo Studio)</a> | <a href="http://www.alternate-tools.com/pages/c_picview.php?lang=ENG">PicView</a>	简单处理+支持下张</p>
+<p><a href="https://www.52pojie.cn/thread-831415-1-1.html">Scankromsator</a> | <a href="https://soft.sibnet.ru/soft/17932-book-restorer-4-2-1--rusifikator/">BookRestorer</a> | <a href="http://www.downloadsoftware.ir/tag/recogniform-image-processor">RecogniformImage</a>	扫描图书优化</p>
+<p><a href="https://www.jb51.net/softs/540538.html">扫描图片批量倾斜校正去底色V1.1</a> | <a href="http://scantailor.org/">Scantailor</a> | <a href="https://galfar.vevb.net/wp/tag/deskew/">DeskewGUI</a>	纠偏</p>
+<p><a href="http://www.onlinedown.net/soft/625692.htm">潮村批量图片分割器</a> | <a href="http://www.pc6.com/softview/SoftView_503657.html">晨晨双页扫描图片分割器</a>	对开分割</p>
+<h3>其他</h3>
+<hr />
+<p>未介绍的软件，包括阅读器与编辑器，点击名称进入官网即可获取。</p>
+<ul>
+<li>商业含免费	<a href="http://wpspdf.cn/">金山 WPS PDF</a> | <a href="https://www.ashampoo.com/cn/usd/pin/0074/office-software/pdf-free">Ashampoo PDF</a> | <a href="https://www.investintech.com/resources/freetools/slimpdfreader/">SlimPDF Reader</a> | <a href="https://www.gonitro.com/resources">Nitro PDF</a></li>
+<li>自由或免费	<a href="https://mupdf.com/">MuPDF</a> | <a href="http://www.xpdfreader.com/">Xpdf</a> | <a href="https://wiki.gnome.org/Apps/Evince">Evince</a> | <a href="https://www.xodo.com/">XODO PDF</a></li>
+<li>商业纯收费	<a href="https://pdf.wondershare.cn/">PDFelement</a> | <a href="http://www.vivpdf.com/">VivPDF</a> | <a href="http://www.coolpdf.com/">CoolPDF</a> | <a href="https://www.pdfforge.org/">pdfforge</a> | <a href="https://www.nuance.com/zh-cn/index.html">Nuance</a> | <a href="https://www.drumlinsecurity.com/javelindownloads.html">Javelin PDF Readers</a> | <a href="https://www.drawboard.com/">Drawboard</a></li>
+<li>在线含收费	<a href="https://smallpdf.com/">SamllPDF</a> | <a href="https://pdfcandy.com/download.html">PDF Candy Desktop</a> <a href="https://lightpdf.com/zh/">LightPDF</a> | <a href="https://www.pdfpai.com/">PDF派</a></li>
+<li>其他国产类	<a href="http://pic.2345.cc/">2345看图</a>（流氓，不可用官方版）<a href="http://www.pdfbianji.com/">捷速PDF</a>（仅推荐<a href="https://www.xiazaiba.com/dl/5675.html">旧版</a>）<a href="http://www.yueshupdf.com/">悦书PDF</a> | <a href="https://www.jisupdf.com/">极速PDF</a></li>
+<li>多格式支持	<a href="http://www.stdutility.com/stduviewer.html">STDUViewer</a> | <a href="https://soft-xpansion.de/pdf-apps/reader-app/">Perfect PDF Reader</a> | <a href="http://ssreader.chaoxing.com/">超星阅读器</a></li>
+</ul>
+<p>仅列举较为有名、被推荐过的软件。有些浏览器未列入；有些跨平台，但仍未进推荐。有些收费不好买，需要寻找破解，原则上不推荐。（若无办法，可在52破解、0daydown、易破解等网站找到。）</p>
+<p>更多可参考<a href="https://en.wikipedia.org/wiki/List_of_PDF_software">英文维基</a>。</p>
+<blockquote>
+<p>个人精力有限，许多用过还不错的可能没列出，仅为大家参考。另附<a href="https://pan.baidu.com/s/1f0HmI0N_azTAuYi5W2e_Ig">部分APK下载</a>（byo5，长期未更新）</p>
+</blockquote>
+<h3>扫描版优化</h3>
+<hr />
+<p>本文适用于纯图片扫描版图书优化，文字尚未整理清楚，请见谅。</p>
+<p>本页代码块文字仅有加粗项可能为链接，请注意。</p>
+<h4>总则</h4>
+<hr />
+<p><strong>导出 → 处理 → 输出 → OCR → 书签 → 标记</strong></p>
+<h4>导出</h4>
+<hr />
+<p><strong>PDF</strong>	<a href="http://pdfpatcher.cnblogs.com"><code>PDF补丁丁</code></a>原图导出（次选<a href="https://github.com/Mararsh/MyBox"><code>MyBox</code></a>）补丁丁操作方便，能合并同页面图片，且可以自定义命名规则</p>
+<p><strong>PDG</strong>	解压后文件夹拖入<code>Pdg2Pic</code>，选择<code>存放转换出来的图像文件的文件夹</code></p>
+<p><strong>DjVu</strong>	<code>DjVuToy</code> 个人推荐转换为图片</p>
+<h4>处理</h4>
+<hr />
+<p>最常用<code>ComicEnhancerPro</code>，除了彩色封面封底的用画图PS修正外，以下均基于此。其他如<a href="https://www.52pojie.cn/thread-831415-1-1.html"><code>Scankromsator</code></a>也不错，但上手不易用。而<code>BookRestorer</code>和<code>RecogniformImage</code>适用范围小、兼容不佳、收费、仅有英文。</p>
+<ul>
+<li><strong>选几个典型图拖进ComicEnhancerPro调基本参数看效果，确定优化方案</strong></li>
+</ul>
+<p><code>尺寸纠斜、色数表现、亮度伽马、柔化锐化，这些也是基本项目</code></p>
+<ul>
+<li><strong>再按情况需求分类存放，以便批量处理</strong></li>
+</ul>
+<p><code>如4色、8色、彩色三类，对应书中黑白字，黑白图和彩图  例子</code></p>
+<ul>
+<li><strong>若处理比较复杂，可分步骤优化</strong></li>
+</ul>
+<p><code>如先提高DPI、纠斜、色阶等输出保存，再对新文件缩小、二值化。由于扫描质量堪忧或优化后文件太大，可采取这种思路调节。</code></p>
+<h5>尺寸</h5>
+<hr />
+<p><code>切边</code> → <code>页面大小</code> → <code>开本</code>- <code>设置DPI</code>300起</p>
+<p>扫描较准、标注复杂、常有留空等情况缩放不一可选<code>缩放</code>而非切边。若无指定开本，可用近似值或自行换算（单位可用像素）</p>
+<p><code>页面预处理</code> → <code>纠斜</code> 自动横排</p>
+<p><code>内容框选择</code> → <code>手动范围内自动选择</code> 不计黑边 忽略斑点直径08</p>
+<p><code>内容框排版</code> → <code>水平</code>居中 <code>垂直</code>不变</p>
+<p><code>个人偷懒缩放用的多（CEP的`颜色数`会显示当前长宽）参考以下
+基本：宽1000-2000像素左右 常见尺寸1500±150已经满足需求
+高清：宽3000-4000像素左右 更高清参考教程21：“伪·高清”制作</code></p>
+<h5>色数</h5>
+<hr />
+<p><strong>黑白</strong>  <code>纯黑白</code> / <code>2色</code> → <code>选项</code>→<code>Otsu</code>+<code>边缘去毛刺</code>+<code>去斑直径1-3</code> （慎用<code>去除边缘接触的黑色区域</code>）</p>
+<p><strong>灰度</strong>  <code>4-8级</code> / <code>4-8色</code>  ★最常用偷懒方案</p>
+<p><code>各种原因导致调整复杂、不想放大高斯费时间等情况下的选择…
+即便如此，体积削减仍很可观。另，抖动会增加大小，没必要则不选。</code></p>
+<p><strong>彩色</strong>  修正处理请用<code>画图</code>和<code>PhotoShop</code>，如位移、填充和图章</p>
+<h5>亮度伽马</h5>
+<hr />
+<p><code>后处理</code> or <code>亮度：106-115</code>+<code>Gamma校正：120-150</code> 完全视情况而定，有时同用。</p>
+<p>去常见灰色水印<code>亮度：107</code>+<code>伽马：120</code></p>
+<h5>柔化锐化</h5>
+<hr />
+<p><code>其他</code> → 连同<code>加粗</code>/<code>变细</code>/<code>开</code>/<code>闭</code>等选项，视情况而定</p>
+<h4>输出</h4>
+<hr />
+<p><code>FreePic2Pdf</code> 300DPI 或 图像扫描DPI</p>
+<p>此处可调整软件打开时的布局、页面大小和点书签后页面缩放，通常默认即可。</p>
+<p>有些图实在是小，又不想优化时放大，96DPI可能不错；若对标移动设备的分辨率，可参考<a href="http://no722.cocolog-nifty.com/blog/"><code>ChainLP</code></a>软件的<code>解像度</code> </p>
+<blockquote>
+<p>一般来说，300针对的是1200宽以上，600则2800以上，参考下表</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+	<th>逻辑尺寸</th>
+	<th></th>
+	<th></th>
+	<th></th>
+	<th align="left">18.5cm</th>
+	<th></th>
+	<th></th>
+	<th></th>
+	<th align="left">15.3cm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<td>DPI</td>
+	<td>150</td>
+	<td>300</td>
+	<td>600</td>
+	<td align="left">800</td>
+	<td>150</td>
+	<td>300</td>
+	<td>600</td>
+	<td align="left">800</td>
+</tr>
+<tr>
+	<td>像素尺寸</td>
+	<td>1093</td>
+	<td>2185</td>
+	<td>4370</td>
+	<td align="left">5827</td>
+	<td>904</td>
+	<td>1807</td>
+	<td>3614</td>
+	<td align="left">4819</td>
+</tr>
+</tbody>
+</table>
+<p>引用自ComicEnhancerPro教程21</p>
+<h4>OCR</h4>
+<hr />
+<p>OCR目的是识别大部分中英文使得检索、摘取部分文字方便，不需要可不做。</p>
+<p><strong>PDF直接扫描</strong> <code>ABBYY PDF Transformer</code>+ <code>文件</code> → <code>转换为</code> → <code>可搜索PDF</code></p>
+<p><code>ABBYY PDFT+嵌入文本不会对图片进行任何处理，综合性能较高。</code></p>
+<p><strong>PDG直接转时</strong> <code>Pdg2Pic</code> + <code>MODI</code>         </p>
+<p><strong>图片生成PDF</strong> <code>FreePic2Pdf</code> + <code>MODI</code>    </p>
+<p><code>安装MODI后 勾选生成`双层PDF`和`OCR语言`即可</code></p>
+<p><strong>特殊需要</strong></p>
+<ul>
+<li>散页或摘选识别： <code>ABBYY PDFT+</code>  或截图OCR软件（如<a href="https://www.52pojie.cn/thread-919023-1-1.html"><code>PandaOCR</code></a>）</li>
+<li>PDG或繁体竖排：<code>高版本UnicornViewer</code></li>
+<li>EPUB或Word等： ABBYY 12/14（手动指定OCR语言不要≥4，请选自动）</li>
+</ul>
+<h4>书签</h4>
+<hr />
+<p>任意OCR软件连同</p>
+<p><code>PdgCntEditor</code>  编辑制作书签，导入导出（有时用到<code>FreePic2Pdf</code>）</p>
+<p><code>PDF-XChange Viewer</code> 复制粘贴保存书签，详细定位书签（此类需<code>PDF补丁丁</code>导出xml）</p>
+<p>原有书签，<code>PDF-XChange Viewer</code> 复制粘贴即可，<code>PdgCntEditor</code>/<code>FreePic2Pdf</code>导出导入亦可。</p>
+<p>自制书签，分为手工录入定位和OCR目录编辑。</p>
+<ul>
+<li>
+<p>手工</p>
+<ul>
+<li>在当前页直接新建书签、编辑文本即可。建议用<code>PDF-XChange Viewer</code></li>
+<li>页面定位的阅读布局为<code>单页</code>，详细定位阅读布局为<code>连续</code>（实际位置为可视部分顶部）</li>
+</ul>
+</li>
+<li>
+<p>OCR目录编辑</p>
+<ul>
+<li>OCR，<code>ABBYY PDFT+</code>稍等直接复制…方法很多请自行选择 。</li>
+<li>编辑，<code>PdgCntEditor</code>拥有所需全部功能，且可保存正则调用。建议直接拖入文件，用其编辑保存书签。</li>
+<li>正则，比如<code>[.+?]+</code>替换<code>空白</code>来删除标题页码间的圆点。（或直接替换为Tab空格）</li>
+<li><a href="http://pdfpatcher.cnblogs.com/"><code>PDF补丁丁</code></a>有OCR目录页转为书签的特色功能。</li>
+</ul>
+</li>
+</ul>
+<p><code>之前由于个人习惯了EmEditor，并未发现PdgCntEditor的正则保存，实是疏忽，万分抱歉。
+原推荐EmEditor 步骤为OCR→文本编辑→PDF拖入PdgCntEditor→复制入文本、移动栏位→保存</code></p>
+<h4>标记</h4>
+<hr />
+<p>用<a href="http://www.xiazaiba.com/html/47076.html"><code>BeCyPDFMetaEdit</code></a>打开PDF，完善书名作者标签，<code>创建者</code> / <code>制作程序</code>写入自己。</p>
+<p>不改<code>创建者(Created)</code> <code>制作程序(Produced)</code>时，PDF-XChangeViewer不错。</p>
+<p>若需感谢来源，通常写在创建者。有时不知是谁就留空了，至少我不敢写自己的。若来自超星，也只有比较好找的无所谓。</p>
+<p>我改meta是因为处理后等于新版本，收尾加个也不碍事。同时方便使用filemeta管理的同学检索。这种事情，若非花费大量时间的确不需要标注防偷…只有见过才会想到。虽然遇上人家也改meta也没任何办法。（以前尾页右下角文本框写入也不一定有用）</p>
+<p>顺便提下，常共享电子书，最好不要随便做标记、批注等会变更文件MD5的操作，以免不能秒传。文件小网络好是无所谓，但也添麻烦，如版本重复。  </p>
+<p><code>之前默认不处理页码，因为有的删无用页等，补编麻烦。有详细书签，绝对页码足够。
+现在时常会处理页码，因为纯JPG组成或直扫出OCR的文件往往要进Acrobat另存自动优化
+（移动端加载变快明显，我不了解技术细节，不知道为什么）如果不缺页顺手就编排页码了。</code></p>
+<h4>致谢</h4>
+<hr />
+<blockquote>
+<p><strong>特别感谢</strong> <a href="http://www.cnblogs.com/stronghorse/"><code>老马（strnghrs）</code></a>ComicEnhancerPro、FreePic2Pdf、PdgCntEditor 等软件均为老马开发。</p>
+</blockquote>
+<h3>部分下载</h3>
+<hr />
+<blockquote>
+<p><a href="https://pan.baidu.com/s/1Ft3Y1QWoh38Q2G-gXlrZMg">PDF</a> | <a href="https://pan.baidu.com/s/1MhHNS1ixn5ijj1hwWh4PGQ">Acrobat</a> | <a href="https://pan.baidu.com/s/1mdUUOZV9Zma3PNkAKwnrNQ">eBook</a> | <a href="https://pan.baidu.com/s/1ytJP5XoimsvFiN3D73k-FA">Office</a> | <a href="https://pan.baidu.com/s/1pZRf_KxOjlQo9K0zuvuHcg">PhotoShop</a></p>
+<p><a href="https://www.cnblogs.com/stronghorse/p/4913182.html">老马的原创空间</a> | <a href="https://pan.baidu.com/s/1Tt_j9s1yRhb2rTuZICyeMA">超星</a> | <a href="http://www.cnprint.org/bbs/showthread.php?p=2460641">实用电脑印前技术</a> | <a href="https://pan.baidu.com/s/1155jC2Jbe3qEt2wUz5o43g">正则表达式必知必会</a> </p>
+</blockquote>
+<h2>EPUB</h2>
+<p>EPUB本质是一组网页文件，支持EPUB的阅读器实在太多，尤其是移动平台。个人精力有限，仅列举尝试后保留本地安装文件的软件。安卓有很多出名的阅读器，但兼容不好——比如无法打开azw3解包的epub或加载极慢。此外，收费的也不列举。</p>
+<p><strong>浏览器</strong></p>
+<p>桌面平台首选，可覆盖绝大多数EPUB文件。如Windows10自带的Edge、Chrome、Yandex等。</p>
+<p><a href="https://calibre-ebook.com/">Calibre</a></p>
+<p>阅读、编辑、转换、管理，<strong>全功能制霸</strong>。虽然由于管理模式不一定首选，但因其功能插件，几乎避不开它。功能如优化排版、转换MOBI；插件如KindeUnpack的亚马逊格式（azw）提取/解包、EpubSplit的大文件拆分、ModifyEpub的不触及结构转换。</p>
+<p>亚马逊自购可用<a href="https://www.amazon.cn/gp/digital/fiona/kcp-landing-page/"><code>Kindle for PC</code></a>下载，但需要解密，如<code>Kindle DRM Removal v4.8.2.252注册版</code>  | <a href="https://github.com/apprenticeharper/DeDRM_tools/releases/"><code>DeDRM</code></a></p>
+<p><strong>移动端</strong></p>
+<p><a href="http://www.moondownload.com/chinese.html"><code>静读天下</code></a> | <a href="https://github.com/koreader/koreader/wiki/KOReader%E7%BB%B4%E5%9F%BA"><code>KOreader</code></a> | <a href="http://www.duokan.com/product"><code>多看阅读</code></a> | <a href="https://www.coolapk.com/apk/com.gedoor.monkeybook"><code>阅读</code></a></p>
+<p><strong>次选列举</strong></p>
+<p>若无说明，均为PC平台，且已过时、不更新或响应较慢。</p>
+<ul>
+<li><a href="https://support.apple.com/zh-cn/books"><code>iBook</code></a>（MAC平台的优选，另有PC模仿选择<a href="https://www.xiazaiba.com/html/3284.html">iBookReader</a>）</li>
+<li><a href="http://www.epubfilereader.com/"><code>EPUB File Reader</code></a>（对付错版/纯图的首选，除此不太好用）</li>
+<li><a href="http://down.tech.sina.com.cn/content/46422.html">iRead</a> | <a href="https://www.adobe.com/solutions/ebook/digital-editions/download.html">Adobe Digital Editions</a> | <a href="http://down.tech.sina.com.cn/content/54688.html">Sony Reader</a> | <a href="https://fbreader.org/">FBReader</a> | <a href="http://www.xdowns.com/soft/4/136/2012/Soft_96517.html#">LovelyReader</a>（需要Adobe Air）</li>
+<li>DjVu名目下的安卓应用也支持EPUB，但未经详细测试。</li>
+</ul>
+<h2>MOBI</h2>
+<p><a href="http://www.onlinedown.net/soft/634581.htm">Mobipocket Reader</a></p>
+<p>个人目前已知关联、加载、阅读等体验最好的阅读器。（某些知名UWP应用一言难尽）</p>
+<p>绿色小巧，唯一缺陷是打开即复制文件到我的文档软件目录下，有些人可能不喜欢。</p>
+<p><a href="https://calibre-ebook.com/">Calibre</a> </p>
+<p>详见EPUB，在3.x之后对mobi的排版和搜索已经大为改观。</p>
+<p><strong>移动端</strong></p>
+<p>除<a href="https://www.amazon.cn/gp/digital/fiona/kcp-landing-page/"><code>Kindle</code></a>外，同EPUB。顺便一提，Kindle PC下体验不好。</p>
+<h2>UVZ/ZIP</h2>
+<p><a href="https://www.lanzous.com/i3zqntg">UnicornViewer</a> | <a href="http://ssreader.chaoxing.com/">超星阅读器</a></p>
+<p>.UVZ或者.ZIP带SS号（如<code>32008680_现代实用新闻写作.PDF</code> | <code>《全民办铀矿》_11689321.ZIP</code> ）</p>
+<p>本质都是打包的散页PDG（可用超星阅读器打开）推荐使用UnicornViewer，可直接关联。</p>
+<h2>其他格式</h2>
+<h3>CBR/CBZ</h3>
+<hr />
+<p>漫画发布常用的格式，本质是<code>RAR</code>/<code>ZIP</code>（国内直接用这些的多） ，可用解压软件打开。</p>
+<p><a href="http://www.bandisoft.com/honeyview/"><code>HoneyView</code></a>	加载快，支持智能对开。可关联文件、设置大缓存（内存足够的话）。</p>
+<p><a href="http://www.cnblogs.com/stronghorse/"><code>ComicsViewer</code></a>	功能丰富，支持图片增强、漫画管理等。</p>
+<p>还有<a href="http://comicrack.cyolito.com/">ComicRack</a> | <a href="http://www.cdisplayex.com/">CDisplayEx</a> | <a href="http://soft.onlinedown.net/soft/1150480.htm">MangaMeeya</a>等，有些包含管理功能。</p>
+<p>安卓平台仍是选择颇多</p>
+<p>目前<a href="https://play.google.com/store/apps/details?id=com.viewer.comicscreen"><code>ComicScreen</code></a>最佳（基于个人 安卓7.1.2 的体验，<a href="http://detail.zol.com.cn/tablepc/index382859.shtml">三星T700</a> + <a href="https://download.lineageos.org/">LineageOS</a>）</p>
+<p>其次<a href="https://play.google.com/store/apps/details?id=com.cyo.comicrack.viewer.free"><code>ComicRack</code></a> | <a href="https://play.google.com/store/apps/details?id=jp.co.tokyo_ip.SideBooks&amp;hl=en&amp;rdid=jp.co.tokyo_ip.SideBooks"><code>SideBooks</code></a> | <a href="https://soft.shouji.com.cn/down/21244.html">PerfectViewer</a> | <a href="https://play.google.com/store/apps/details?id=com.progdigy.cdisplay.free">CDisplayEx</a> | <a href="https://soft.shouji.com.cn/down/24727.html">开卷漫画</a>（5.2/6.4/New）等。</p>
+<p>有的不支持RAR5，有的不够易用，有的版本陈旧或有广告……但体验仍在，可根据需要选择。</p>
+<pre><code>**Mac** [Simple Comic](https://simple-comic.en.softonic.com/mac) | **iOS** [SideBooks](https://itunes.apple.com/cn/app/sidebooks/id409777225?mt=8) | [iComix](https://itunes.apple.com/cn/app/icomix/id524751752?mt=8)
+</code></pre>
+
+<h3>DjVu</h3>
+<hr />
+<p>常见于旧扫描书，<a href="https://windjview.sourceforge.io/"><code>WinDjView</code></a>（<a href="http://www.djvu-soft.narod.ru/">1.03</a>/<a href="https://sourceforge.net/projects/windjview/files/">2.1</a> 前者有<a href="http://www.pc6.com/softview/SoftView_24784.html"><code>汉化版</code></a>）<a href="http://djvu.sourceforge.net/djview4.html">DjView4</a>  <a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">SumatraPDF</a> <a href="http://bbs.gxsd.com.cn/forum.php?mod=viewthread&amp;tid=352757">UnicornViewer</a>（高版本）</p>
+<p>安卓	<a href="https://play.google.com/store/apps/details?id=org.ebookdroid"><code>EBookDriod</code></a> | <a href="http://www.moondownload.com/chinese.html">静读天下5+</a> | <a href="https://librera.mobi/">Librera</a>（<a href="https://www.52pojie.cn/thread-861739-1-1.html">52pojie</a>/<a href="https://github.com/foobnix/LibreraReader/releases">Github</a>）<a href="https://play.google.com/store/apps/details?id=org.sufficientlysecure.viewer">Document Viewer</a> | <a href="https://fbreader.org/content/fbreader-214-and-djvu-plugin-android">FBreader</a> | <a href="https://github.com/koreader/koreader/wiki/KOReader%E7%BB%B4%E5%9F%BA">KOreader</a></p>
+<h3>CAJ/NH</h3>
+<hr />
+<p>即知网专属格式，<a href="http://cajviewer.cnki.net/"><code>CAJViewer</code></a></p>
+<h3>NFO</h3>
+<hr />
+<p>即.nfo文件，<a href="https://www.jb51.net/softs/546945.html"><code>DAMN NFO Viewer</code></a></p>
+<h3>Markdown</h3>
+<hr />
+<p>即.md文件，<a href="https://www.typora.io/"><code>Typora</code></a> | <a href="http://cloose.github.io/CuteMarkEd/">CuteMarkEd</a> | <a href="http://soft.xiaoshujiang.com/">小书匠</a> | <a href="https://github.com/QL-Win/QuickLook">QuickLook</a>（仅浏览，无法打开链接。日常够用）<strong>安卓</strong> <a href="https://play.google.com/store/apps/details?id=com.ekartoyev.enotes">Epsilon Notes</a></p>
+<h3>Office</h3>
+<hr />
+<p><a href="https://www.openoffice.org/">OpenOffice</a> | <a href="https://zh-cn.libreoffice.org/">LibreOffice</a> | <a href="https://www.wps.cn/">WPS</a> | <a href="https://www.freeoffice.com/zh/">SoftMaker</a> | Office By xb21cn | Office 2007 SP3 PE 3in1  | HxS可用<a href="https://www.jb51.net/softs/124308.html">H2Viewer</a></p>
+<p>插件：<a href="http://easychart.github.io/post/Easycharts/">EasyCharts</a> | <a href="https://www.jianshu.com/u/1d0e4a6e400e">Excel催化剂</a> | <a href="http://www.ffcell.com/home/products.aspx">方方格子</a> | <a href="https://www.islide.cc/">iSlide</a></p>
+<h3>数据库</h3>
+<hr />
+<p><a href="https://fishcodelib.com/Database.htm"><code>Database.NET</code></a></p>
+<h2>实用工具</h2>
+<p>本章除词典翻译一节外有不少链接指向破解，因此CC协议只包含引用链接的文本，不含链接本身。</p>
+<h3>词典翻译</h3>
+<hr />
+<p>各平台和在线词典有很多，此处主要推荐繁体/生僻/异体字查询、轻便的客户端，木有MAC和某些著名跨平台软件。亦不提供插图等输入方案（可以百度）和罗塞塔石碑等学习软件。另外，异体字多需要语境参考，水平不及，不便深入。</p>
+<h4>在线查询</h4>
+<blockquote>
+<p><strong>汉字</strong> <a href="http://www.zdic.net/"><code>汉典</code></a> | <a href="http://yedict.com/"><code>字海网</code></a> | <a href="http://dict.variants.moe.edu.tw/variants/rbt/query_by_radical_tiles.rbt?command=clear&amp;pageId=2981940"><code>教育部異體字字典</code></a> | <a href="http://www.guoxuedashi.com/">国学大师</a> | <a href="https://ctext.org/dictionary.pl?if=gb&amp;remap=gb">中国哲学电子书计划</a> | <a href="https://hanziyuan.net">Chinese Etymology 字源</a> | <a href="http://www.mebag.com/index/">引得市</a></p>
+<p><strong>外语</strong> <a href="https://dict.hjenglish.com/"><code>沪江小D</code></a> | <a href="http://www.youdao.com/">有道词典</a> | <a href="https://dictionary.cambridge.org/">剑桥词典</a> | <a href="https://en.oxforddictionaries.com/">牛津在线词典</a></p>
+</blockquote>
+<p>其他知名词典与百度直接出结果（百度词典）等不再赘述。另推荐	<a href="https://www.gushiwen.org/">古诗文网</a>	<a href="http://dict.revised.moe.edu.tw/cgi-bin/cbdic/gsweb.cgi?ccd=tVvLuW&amp;o=e0&amp;sec=sec1&amp;index=1">教育部重編國語辭典修訂本</a></p>
+<h4>本地字典</h4>
+<blockquote>
+<p><a href="http://hanbox.cnblogs.com/"><code>汉文博士</code></a>	强烈推荐，支持多种方式检索生僻古难字。使用<code>构型</code>即可满足绝大部分需求。</p>
+<p><a href="http://www.lingoes.cn/"><code>灵格斯词霸</code></a>	<a href="http://blog.sina.com.cn/s/blog_89a729a40102wjwf.html"><code>有道词典纯净版</code></a></p>
+</blockquote>
+<p><a href="http://www.guoxuedashi.com/download/kxzd.php">汉字宝典</a>	可查15万字33种工具书，<a href="http://www.guoxuedashi.net/download/">国学大师出品</a>(<a href="http://pan.baidu.com/s/1qWoQZzY">开心宋体</a>可在主页找到地址)</p>
+<p><a href="http://bbs.gxsd.com.cn/forum.php?mod=viewthread&amp;tid=955434">汉语大词典网页检索版</a>	国学数典网友古木秀林出品。但体积较大（3-6G）根据需求选择 <a href="http://bbs.gxsd.com.cn/forum.php?mod=viewthread&amp;tid=1089566">图像版</a>。</p>
+<p><a href="">汉语辞书集锦djvu</a>（提取码<code>q5lj</code>）原载于读书园地。同类词典可在百度、国学数典、小浣熊等骡链镜像寻找。</p>
+<p>关于汉文博士查询结果的<a href="http://zh.wikipedia.org/zh-hk/表意文字序列#.E8.A1.A8.E6.84.8F.E6.96.87.E5.AD.97.E5.AD.97.E7.AC.A6">表意文字描述序列</a>可参考<a href="https://zhuanlan.zhihu.com/p/19753292">如何精确地表示生僻字</a></p>
+<h4>移动平台</h4>
+<p>用的少，<strong>安卓</strong>中英文都是<a href="https://soft.shouji.com.cn/down/22571.html"><code>ColorDict</code></a>，静读天下所需。<strong>iOS</strong>则是很常见的新华字典、牛津英汉之类，不适合推荐。</p>
+<p>口语翻译推荐<a href="http://voicetra.nict.go.jp/en/"><code>VoiceTra</code></a>	下载：<a href="https://play.google.com/store/apps/details?id=jp.go.nict.voicetra&amp;hl=en">GoolgePlay</a> | <a href="https://itunes.apple.com/cn/app/id581137577?mt=8">AppStore</a></p>
+<h4>输入法</h4>
+<p>商业输入法多数支持手写入不再赘述，部分也支持拆字输入（但可能不如<a href="http://yedict.com/download/">字海</a>做的好）</p>
+<p>此处仅推荐 手写：<a href="http://www.epinv.com/post/4854.html"><code>逍遥笔单文件版</code></a>	笔画部件篆书：<a href="http://www.ancientbooks.cn/helpcore?input"><code>中华书局古联输入法</code></a>（<a href="http://www.ancientbooks.cn/helpcore?font">宋体字库</a>）</p>
+<h4>本地翻译</h4>
+<p>目前仅推荐调用互联网公司翻译接口的小软件，专业翻译软件、写作出版翻译助手和软件本地化暂不收录。</p>
+<p>如<a href="http://quest-app.appspot.com/">QTranslate</a>（<a href="http://www.pc6.com/softview/SoftView_54241.html">不翻墙下载</a>），前文介绍过的<a href="https://www.cnblogs.com/elliottzheng/p/9060159.html"><code>CopyTranslator</code></a> | <a href="https://www.52pojie.cn/thread-849027-1-1.html">SCITranslate10 VIP</a>等等。</p>
+<p>包含翻译功能的截图OCR软件详见之后章节。</p>
+<h3>文本编辑</h3>
+<hr />
+<p>纯拉清单，排名不分先后。包含代码支持，但不含<code>十六进制</code>/<code>代码整理</code>/<code>编程辅助</code>相关工具。绝不可能推荐<a href="http://www.gnu.org/software/emacs/"><code>Emacs</code></a>！</p>
+<p>目前也不含写作软件……</p>
+<p><a href="https://atom.io/">Atom</a> | <a href="https://tools.stefankueng.com/BowPad.html">BowPad</a> | <a href="https://notepad-plus-plus.org/">Notepad++</a> | <a href="https://sourceforge.net/projects/notepad2/">notepad2</a>（<a href="http://www.skycn.com/soft/appid/27652.html">汉化</a>）<a href="https://code.visualstudio.com/">VSCode</a> </p>
+<p><a href="https://www.portablesoft.org/emeditor-pro/">EmEditor</a> | <a href="https://hrtsea.com/80.html">EditPlus</a> | <a href="http://cn.everedit.net/">EverEdit</a>（<a href="https://www.52pojie.cn/thread-895704-1-1.html">破解过期弹窗</a>） | <a href="https://www.sublimetext.com/">Sublime Text</a>（<a href="https://www.52pojie.cn/thread-925256-1-1.html">破解</a>/<a href="https://www.52pojie.cn/thread-925256-1-1.html">烈火</a>）</p>
+<p><a href="http://www.wmzhe.com/soft-40756.html">排版助手</a> | <a href="http://www.skycn.com/soft/appid/38098.html">过滤文本内容重复器</a> | <a href="http://www.hao828.com/html/?1532.html">简繁互换工具</a> | Ginger</p>
+<h3>字体</h3>
+<hr />
+<p>主要介绍免费与免费可商用字体，链接内多有授权介绍。</p>
+<p>管理：<a href="http://www.xiles.net/">nexusfont</a> | <a href="http://www.skycn.com/soft/appid/40625.html">字体试衣间</a>	挂载：<a href="http://www.pc6.com/softview/SoftView_656204.html">字体挂载器</a> | <a href="https://www.trishtech.com/font-loader/">Font Loader</a> | <a href="https://github.com/yzwduck/FontLoaderSub">FontLoaderSub</a></p>
+<p><strong>简介</strong></p>
+<p><a href="https://www.oschina.net/project/tag/204/fonts">开源字体</a> | <a href="http://www.epinv.com/post/9966_1.html">免费可商用中英文字体合集 </a></p>
+<p><a href="https://opensource.com/life/16/2/top-sources-open-source-fonts">How to find and install open source fonts</a> | <a href="https://medium.com/sketch-app-sources/30-free-and-open-source-typefaces-released-recently-best-collections-5b46f9d89f65">30+ Free, Delightful and High-Quality Typefaces Released Recently</a></p>
+<p><strong>单个字体</strong></p>
+<p><a href="http://wenq.org/wqy2/index.cgi?FontGuide">文泉驿</a>  | <a href="https://zh.wikipedia.org/wiki/%E7%8E%8B%E6%BC%A2%E5%AE%97%E8%87%AA%E7%94%B1%E5%AD%97%E5%9E%8B">王汉宗自由字型</a> | <a href="https://ctan.org/pkg/fandol">fandol</a></p>
+<p><a href="http://reeji.com/font/rui_zi_zhen_yan_ti/">锐字真言体</a> | <a href="http://www.hanyi.com.cn/productdetail.php?id=3102">汉仪字库 | 贤二体</a> | <a href="http://setofont.osdn.jp/">濑户字体</a>  </p>
+<p><strong>思源字体</strong></p>
+<p><a href="https://github.com/adobe-fonts">Adobe Font</a> | </p>
+<p><a href="https://github.com/adobe-fonts/source-han-sans/tree/release/">思源黑体</a> | <a href="https://github.com/adobe-fonts/source-han-serif">思源宋体</a> | <a href="https://github.com/Pal3love/Source-Han-TrueType">思源 TrueType （TTF）</a> / <a href="https://github.com/junmer/source-han-serif-ttf">思源宋体 TTF</a> / <a href="https://github.com/be5invis/source-han-sans-ttf/">思源黑体TTF</a></p>
+<p><a href="http://jikasei.me/font/genshin/">思源真黑 | 源真ゴシック</a>  | <a href="http://jikasei.me/font/genjyuu/">思源柔黑 | 源柔ゴシック</a> | <a href="http://jikasei.me/font/genshin/">源界明朝</a> | <a href="http://flopdesign.com/blog/font/5228/">装甲明朝</a></p>
+<p><a href="https://github.com/ButTaiwan/genwan-font">源云明体</a> | <a href="https://github.com/ButTaiwan/genyo-font">源样明体</a> | <a href="https://github.com/ButTaiwan/genryu-font">源流明体</a> | </p>
+<p><strong>谷歌字体</strong></p>
+<p><a href="https://fonts.google.com/">Google Fonts</a>（<a href="https://github.com/google/fonts">Github</a>、<a href="http://www.googlefonts.net/">国内镜像</a>）</p>
+<p><strong>站酷平台</strong></p>
+<p><a href="https://www.zcool.com.cn/special/zcoolfonts/">站酷字体合集</a> | 站酷庆科黄油体 | 站酷文艺体 | 站酷小薇LOGO体 | 站酷酷黑体 | 站酷意大利体 | 站酷快乐体 | 站酷高端黑体</p>
+<p><a href="https://www.zcool.com.cn/work/ZMjA0MDg0MDA=.html">庞门正道标题体2.0</a> | <a href="https://www.zcool.com.cn/work/ZMjI2MDk1MDg=.html">手书体中文简体</a> | <a href="https://www.zcool.com.cn/work/ZMjg5MjAwMDQ=.html">沐瑶软笔手写体</a> | <a href="http://www.hellofont.cn/font-detail?fontid=3019">杨任东竹石体</a></p>
+<p><strong>有限授权</strong></p>
+<p><a href="https://www.foundertype.com/index.php/FindFont/searchFont?keyword=%E5%85%8D%E8%B4%B9">方正字库</a> | 黑体、书宋、仿宋、楷体，可申请部分商用授权。</p>
+<p><a href="https://zi.jd.com/">京东字库</a> | 汉仪字体，仅京东平台商用。</p>
+<p><a href="https://www.dynacw.com.cn/news/news_detail.aspx?s=7">华康字型</a> | 仅阿里平台商用。</p>
+<p><a href="http://www.hanyi.com.cn/">汉仪字库</a> | <a href="http://www.sentyfont.com/index.htm">新蒂字体</a>个人免费；<a href="http://www.hanyi.com.cn/newsdetails.php?id=156">智能黑体</a>，仅阿里平台商用。</p>
+<p><a href="http://www.arphic.com.tw/">文鼎字形</a> | 赠予开源社区版的<a href="https://github.com/ButTaiwan/genryu-font">免费版</a></p>
+<p><strong>繁体</strong></p>
+<p><a href="http://founder.acgvlyric.org/iu/doku.php/%E9%80%A0%E5%AD%97:index?redirect=1">刻石錄</a>  明体 | 颜体 | 钢笔鹤体 | <a href="https://github.com/l10n-tw/cwtex-q-fonts">cwTeX 字型</a> | 中明体 | 中楷体 | 中圆体 | 中仿宋体 | 粗黑体</p>
+<p><a href="https://depart.moe.edu.tw/ED2400/News.aspx?n=8940E5C0456177C3&amp;sms=893AAA1CBFE149DE">終身教育司-國字標準字體及字表</a> | <a href="https://depart.moe.edu.tw/ED2400/News_Content.aspx?n=8940E5C0456177C3&amp;sms=893AAA1CBFE149DE&amp;s=AA29AF7FE3BAD13F">教育部國字隸書字形檔</a>（商用需申请） | <a href="https://www.cns11643.gov.tw/AIDB/download.do?name=%E5%AD%97%E5%9E%8B%E4%B8%8B%E8%BC%89">說文解字True Type字型</a>（个人授权）</p>
+<p><a href="http://www.ibiblio.org/pub/packages/ccic/software/fonts/big5/ms-win/ctlg.html">台大中文字体</a>（免费）</p>
+<p><strong>日文</strong></p>
+<p><a href="https://moji-waku.com/index.html">もじワク研究</a> | <a href="https://www.freejapanesefont.com/">Free Japanese Font</a> | <a href="http://fontfree.me/">フォントフリー </a></p>
+<p><a href="https://www.flopdesign.com/freefont">フリーフォント無料ダウンロード</a> | <a href="https://matome.naver.jp/odai/2129040832969034001">日本語フォントの配布サイト</a></p>
+<hr />
+<p><a href="http://fonts.jp/hanazono/">花园明朝 | Hanazono fontsz</a>、<a href="https://www.flopdesign.com/freefont/utsukushi-mincho-font.html">フリーフォントうつくし明朝体</a><a href="https://www.flopdesign.com/freefont/smartfont.html">スマートフォントUI+</a></p>
+<p><a href="http://font.websozai.jp/line-font-mihon.html">超極細ゴシック体</a> / <a href="http://font.websozai.jp/line-font2-mihon.html">なごみ極細ゴシック</a>、<a href="https://leafscape.be/fonts/144.html">851手書き雑フォント</a>、<a href="https://tanukifont.com/tanuki-permanent-marker/">TanukiMagic 麦克笔手绘体 |  たぬき油性マジック</a></p>
+<p><strong>英文</strong></p>
+<p><a href="https://fontlibrary.org/">Font Library</a></p>
+<p><a href="https://www.fontsquirrel.com/fonts/list/find_fonts?filter%5Blicense%5D%5B0%5D=open">Find Free Fonts » Font Squirrel</a> | <a href="https://www.fontspace.com/category/open">1,173 Free open fonts - FontSpace</a></p>
+<hr />
+<p><a href="https://www.theleagueofmoveabletype.com">The League of Moveable Type</a> | <a href="https://www.ibm.com/plex/">IBM Plex</a> | <a href="https://gumroad.com/l/jPYXU">Morganite</a> |  <a href="https://www.zcool.com.cn/work/ZMjc0Njk1ODQ=.html">AiDeep 英文字体</a></p>
+<h3>看图</h3>
+<hr />
+<p>多数免费工具可在<a href="https://www.free-codecs.com/software/graphics.htm">codecs.com</a>查看，收费工具可在<a href="http://www.epinv.com/post/category/other/">亿品元素</a>等站点下载。</p>
+<p><strong>看图</strong></p>
+<hr />
+<blockquote>
+<p><a href="http://www.bandisoft.com/honeyview/"><code>HoneyView</code></a>	上文CBR/CBZ已提到过，综合表现优异，推荐默认。</p>
+</blockquote>
+<p><a href="https://imageglass.org/">ImageGlass</a>	简单支持SVG，独有设计师布局模式。</p>
+<p><a href="https://www.xnview.com/en/xnview/">XnView</a>/<a href="https://www.xnview.com/en/xnviewmp/">XnViewMP</a>	开源多平台，功能全面，支持管理。</p>
+<p><a href="http://www.carrotchou.blog/14935.html">FastStone Image Viewer</a>	大文件缩放支持极佳，如前段时间的<code>行星发动机全景版”海报—大图</code>110M JPG</p>
+<p>还有很多著名软件，比如<a href="https://www.irfanview.com/">IrfanView</a> | <a href="https://www.52pojie.cn/thread-910975-1-1.html">MaxView</a> | <a href="http://www.pc6.com/softview/SoftView_573447.html">PicView</a> | <a href="http://www.fastpictureviewer.com/">FPV</a> | <a href="http://www.wmzhe.com/soft-31394.html">美图看看2.6.7</a> 不再赘述，流氓软件2345看图王可用<a href="https://www.52pojie.cn/thread-926533-1-1.html">纯净版</a>。</p>
+<p>其他如<a href="https://www.acdsee.com/en/index">ACDSEE</a>、<a href="https://www.adobe.com/cn/products/bridge.html">Bridge</a>等强调管理且比较笨重，无特殊需求不推荐。前者下载可看<a href="http://www.dayanzai.me/?s=ACDSEE">这里</a>，后者在<a href="https://www.weibo.com/vposy">Adobe全家桶</a>里。</p>
+<p><strong>预览</strong></p>
+<hr />
+<p>多数看图软件关联即可，少数如PSD、WebP才需要此支持。</p>
+<p>常见比如<a href="http://www.epinv.com/post/3149.html">Ardfry Codec</a> | <a href="https://www.free-codecs.com/download/webp_codec.htm">WebP Codec</a> | <a href="https://sourceforge.net/projects/sagethumbs/">SageThumbs</a> | <a href="https://www.52pojie.cn/thread-849659-1-1.html">MysticThumbs</a> | <a href="https://www.52pojie.cn/thread-646965-1-1.html">FastPictureViewer Codec Pack</a></p>
+<p>但各有特点，不是收费、功能单一，就是占用太大……完全根据个人需求选择。</p>
+<p>前文提到的<a href="https://github.com/QL-Win/QuickLook">QuickLook</a>/<a href="https://sourceforge.net/projects/ccseer/">Seer</a>也属此类，而Mac下有<code>preview</code>不需要……</p>
+<p><strong>编辑</strong></p>
+<hr />
+<p>此类软件太多，大家需求不一，推荐起来太难……仅简单介绍几个，不含在线工具。</p>
+<p><strong>绘图</strong>：<a href="https://www.gimp.org/">GIMP</a> | <a href="https://krita.org/es/">Krita</a></p>
+<p><strong>转换</strong>：<a href="https://www.xnview.com/en/xnconvert/">XnConvert</a> | <a href="http://www.faststone.org">FSResizer</a> | <a href="http://www.onlinedown.net/soft/28814.htm">JPEG Resizer</a> | <a href="http://www.glorylogic.com/image-tuner.html">ImageTuner</a> | </p>
+<p><strong>水印</strong>：<a href="https://www.52pojie.cn/thread-452216-1-1.html">Batch Inpaint</a> | <strong>图标</strong>：<a href="https://www.52pojie.cn/thread-643227-1-1.html">IcoLover</a> | <strong>缩放</strong>：<a href="https://masuit.com/177">PhotoZoom</a> | <a href="http://waifu2x.udp.jp/index.zh-CN.html">waifu2x</a> | <strong>笔刷</strong>：<a href="https://sourceforge.net/projects/abrviewer/">abrViewer</a></p>
+<p><strong>编辑</strong>：<a href="http://www.neoimaging.cn/">光影魔术手</a> | <a href="http://www.hao828.com/html/?1456.html">电脑图像工具箱</a>（集成各类处理，旧版1.1/1.5可百度）<a href="https://www.lanzous.com/i3ery5i">Hornil StylePix</a></p>
+<h3>截图</h3>
+<hr />
+<blockquote>
+<p>截图	<a href="http://blog.sina.com.cn/s/blog_89a729a40102wjwk.html">FastStoneCapture</a>	贴图 	<a href="https://zh.snipaste.com/">Snipaste</a></p>
+</blockquote>
+<p><strong>截图</strong>	<a href="https://getgreenshot.org/"><code>Greenshot</code></a> | <a href="https://shuax.com/project/tools/">AeroSnap</a> | <a href="http://www.bugshooting.com/">Bug Shooting</a> | <a href="http://bbs.wuyou.net/forum.php?mod=viewthread&amp;tid=413045">WinSnap</a> | <a href="http://www.dayanzai.me/picpick.html">PicPick</a></p>
+<p><strong>G I F</strong>	<a href="https://www.screentogif.com/?l=zh_cn"><code>ScreenToGif</code></a> | <a href="http://blog.bahraniapps.com/gifcam/">GifCam</a> | <a href="https://www.cockos.com/licecap/">LICEcap</a></p>
+<p><strong>录像</strong>	<a href="http://ohsoft.net/eng/ocam/download.php?cate=1002"><code>oCam</code></a> | <a href="https://www.bandicam.cn/">Bandicam</a>（<a href="https://www.52pojie.cn/thread-611585-1-1.html">3</a>/<a href="http://www.carrotchou.blog/93.html">4</a>） | <a href="http://www.tlxsoft.com/pro/">屏幕录像专家</a>（2014/<a href="http://www.carrotchou.blog/20472.html">2016</a>/<a href="https://www.52pojie.cn/thread-792233-1-1.html">2019</a>）</p>
+<p>此外还有<a href="http://www.carrotchou.blog/125.html">Apowersoft Screen Recorder</a> <a href="https://cn.msi.com/page/afterburner">MSI Afterburner</a> 等适用于不同场景。</p>
+<p>截录功能强调个人需求，不必执着于推荐。 毕竟平常QQ就够了……</p>
+<h4>截图OCR</h4>
+<hr />
+<blockquote>
+<p><a href="https://www.52pojie.cn/thread-919023-1-1.html"><code>PandaOCR</code></a> | <a href="https://sourceforge.net/projects/capture2text/">Capture2Text</a></p>
+</blockquote>
+<p><a href="https://www.52pojie.cn/thread-876331-1-1.html">天若OCR</a> | <a href="https://www.52pojie.cn/thread-912949-1-1.html">树洞OCR</a> | <a href="https://www.52pojie.cn/thread-860382-1-1.html">QQ截图+OCR</a> | <a href="http://cencrack.com/?post=15">识别图片转文字工具</a> </p>
+<p><a href="https://zhuanlan.zhihu.com/p/35889926">简谱转调</a> | <a href="https://mathpix.com/"><code>Mathpix</code></a>（识别公式）</p>
+<p>此类工具很多，多数调用国内互联网公司的开放API。移动平台亦多，如<a href="https://www.coolapk.com/apk/com.microsoft.translator">Microsoft Translator</a> | <a href="https://www.coolapk.com/apk/com.tencent.mobileqq">QQ</a> | <a href="https://www.coolapk.com/apk/3358/">扫描全能王</a>等。</p>
+<h3>字幕</h3>
+<hr />
+<p>虽然播放器的选择大家都知道……文章也极多，但还是简单说下。下载可参考：<a href="https://www.videohelp.com/">VideoHelp</a> | <a href="https://www.free-codecs.com/">Codecs.com</a></p>
+<p><em>我原是介绍Reader的，怎么变成Player了……</em></p>
+<p><strong>播放器</strong></p>
+<blockquote>
+<p>视频	<a href="https://sourceforge.net/projects/mpcbe/"><code>MPC-BE</code></a> | <a href="https://mpc-hc.org/"><code>MPC-HC</code></a></p>
+</blockquote>
+<p><strong>其他常用</strong><a href="http://potplayer.daum.net/?lang=zh_CN">PotPlayer</a>（<a href="http://potplayer.ys168.com/">闻雷整合</a>（<a href="https://pan.lanzou.com/b112173/">最新发布</a>）/<a href="https://pan.baidu.com/s/1eUfEIt0">莫妮卡汉化</a>（提取码<code>r4iy</code>））<a href="http://www.mplayer.org.cn">MPlayer</a>  | <a href="https://www.xiazaiba.com/dl/1.html">QQ Player</a> | <a href="https://www.videolan.org/">VLC Player</a></p>
+<p><strong>解码整合</strong><a href="http://jm.wmzhe.com/">完美解码</a> | <a href="http://www.oursilu.com/thread-1689579-1-1.html">终极解码</a>（<a href="https://hrtsea.com/1702.html">其他下载</a>）</p>
+<blockquote>
+<p>预览	 <a href="https://www.videohelp.com/software/Icaros"><code>Icaros</code></a>  | 字幕 | <a href="https://www.videohelp.com/software/XySubFilter"><code>XySubFilter</code></a></p>
+</blockquote>
+<p>播放、编辑、解码、转换，软件实在太多，后面说明起来也很复杂……于是仅推荐音频的几个<strong>：</strong></p>
+<p><strong>播放</strong>：<a href="http://www.foobar2000.org/">foobar2000</a>（<a href="http://blog.sina.com.cn/go2spa">Asion汉化</a>）<a href="https://resonic.at/">Resonic.at</a>（文件夹式管理）<a href="http://www.aimp.ru/">AIMP</a></p>
+<p><strong>转换</strong>：<a href="http://www.pazera-software.com/products/audio-extractor/">AudioExtractor</a> | <a href="https://www.videohelp.com/software/TAudioConverter">TAudioConverter</a> | <a href="https://www.freac.org/">fre:ac</a></p>
+<p><strong>编辑</strong>：<a href="https://www.audacityteam.org/">Audacity</a></p>
+<p><strong>字幕编辑</strong></p>
+<p>因为面向初学者，最多是修订小错，只简单介绍几个常用工具：</p>
+<p><a href="https://mkvtoolnix.download/">mkvtoolnix</a>+<a href="https://sourceforge.net/projects/gmkvextractgui/">gMKVExtractGUI</a>	MKV工具及其导出程序的GUI，用以提取字幕。</p>
+<p><a href="https://sites.google.com/site/tsdarkness/batchsubtitlesconverter">Batch Subtitles Converter</a>	优秀的字幕格式转换，常用于<code>SRT</code>转<code>ASS</code>。新版本收费，免费的<a href="https://sites.google.com/site/tsdarkness/batchsubtitlesconverter/Download">1.24版</a>够用。</p>
+<p><a href="http://www.aegisub.org/">Aegisub</a>	开源免费跨平台的<code>ASS</code>字幕编辑工具</p>
+<p><a href="https://kuyur.info/blog/archives/1388">Unicue</a>	编码转换工具</p>
+<p>什么，想把<code>idx</code>/<code>sub</code>/<code>sup</code>转换成文本字幕？<a href="https://www.cnblogs.com/stronghorse/p/4913470.html"><code>IdxSubOcr</code></a> 老马出品的OCR转<code>SRT</code>软件。<a href="https://www.videohelp.com/software/BDSup2Sub">BDSup2Sub</a>功能如名。</p>
+<h3>其他</h3>
+<hr />
+<p><strong>搜索工具</strong>	<a href="https://www.voidtools.com/zh-cn/"><code>Everthing</code></a> / <a href="https://www.listary.com/">Listary</a> |  <a href="https://www.jb51.net/softs/558967.html"><code>FileLocator</code></a> / <a href="http://docfetcher.sourceforge.net/en/index.html">docfetcher</a></p>
+<p><strong>重  命  名</strong>	<a href="https://www.52pojie.cn/thread-840043-1-1.html"><code>ReNamer</code></a>  <a href="https://www.52pojie.cn/thread-791060-1-1.html"><code>Advanced Renamer</code></a> / <a href="https://dl.pconline.com.cn/html_2/1/68/id=5709&amp;pn=0.html">拖把更名器</a> | <a href="http://www.antp.be/software/renamer">Ant Renamer</a> | <a href="http://www.onlinedown.net/soft/977246.htm">深蓝批量重命名</a> | <a href="http://bbs.vcb-s.com/thread-1658-1-1.html">U2字幕重命名工具</a></p>
+<p><strong>文件列表</strong>	<a href="http://www.skycn.com/soft/appid/31425.html"><code>文件列表生成器</code></a> | <a href="http://www.dayanzai.me/lister-pro.html"><code>Directory Lister</code></a></p>
+<p><strong>重复查询</strong>	<a href="https://www.appcgn.com/duplicate-cleaner-pro.html"><code>Duplicate Cleaner</code></a> | <a href="http://www.alldup.info/"><code>AllDup</code></a></p>
+<p><strong>文件同步</strong>	<a href="https://freefilesync.org/"><code>FreeFileSync</code></a> | <a href="https://allwaysync.com/">Allway Sync</a></p>
+<p><strong>算法工具</strong>	<a href="https://github.com/guyoung/CaptfEncoder">CaptfEncoder</a> | <a href="https://www.chinapyg.com/forum.php?mod=viewthread&amp;tid=72459">PYG密码学工具</a></p>
+<p><strong>快捷启动</strong>	<a href="http://www.wox.one/"><code>Wox</code></a> | <a href="https://www.52pojie.cn/thread-818034-1-1.html"><code>Lily</code></a> | <a href="https://getrolan.com/"><code>Rolan</code></a>（推荐<a href="http://www.carrotchou.blog/777.html">旧版本</a>）<a href="http://www.launchy.net/">Launchy</a> | <a href="https://u.tools/">uTools</a> | <a href="https://github.com/hui-Zz/RunAny">RunAny</a> | <a href="https://www.laomoit.com/ntrun.html">nTrun</a> | <a href="https://github.com/goreliu/runz">RunZ</a></p>
+<p><strong>网页脚本</strong>	<a href="https://greasyfork.org/zh-CN"><code>Greasy Fork</code></a>（含管理器介绍）<a href="https://greasyfork.org/zh-CN/scripts/14178">AC-baidu</a> | <a href="https://greasyfork.org/zh-CN/scripts/27752">searchEngineJump</a> | <a href="https://greasyfork.org/zh-CN/scripts/24204-picviewer-ce">Picviewer CE+</a> | <a href="https://greasyfork.org/zh-CN/scripts/28497">限制解除</a> | <a href="https://greasyfork.org/zh-CN/scripts/29762">网盘自动填写密码</a></p>
+<p>同类软件非常多，因此仅列举个人常用（过）的……有需求可自行百度类别尝试，脚本则直接在Greasy Fork搜寻。</p>
+<p>免责声明：仅提供原页面链接，不属于转载。</p>
+<hr />
+<p>​	</p>
+<p>了解某类软件的最好方式是……百度你的需求</p>
+<p>个人习惯搜索到软件后，追寻主题/官网/汉化/破解源，然后遍历这些源，可能有需求的下载试用，保留适用的。大部分时候不依赖于源，但至少也知道去哪里找——甚至可以直接翻软件站类别。国内的不提，国外的可以试试<a href="https://www.majorgeeks.com/">MajorGeeks</a>。</p>
+<p>在<a href="https://sourceforge.net/">SourceForge</a>、<a href="https://github.com">Github</a>、<a href="https://www.fosshub.com/">Fosshub</a>等开源/代码/软件平台上也有太多好项目，可以直接看类别Top20。更不要提伟大的<a href="http://www.gnu.org/">GNU</a>与自由软件。以前喜欢便携软件，通过<a href="https://portableapps.com/">PortableApps</a>、<a href="https://www.portablesoft.org/">精品绿色便携软件</a>了解到不少。尤其是前者包含很多免费/开源软件。</p>
+<p>对于某些类别，比如安全、破解、系统、美化、MAC、手机……和许多常见商业软件/需求（如PS/出版）论坛可能是比较好的方式。当然，这些方式不适用于所有人，尤其可能需要翻墙。</p>
+<p>好吧虽然现在百度不用脚本没法用了……大家用的可能是必应/谷歌。</p>
+<h2>专业工具</h2>
+<p>施工中，一万年后见……请勿参考。</p>
+<p>已经完全不是阅读了，虽然分析下词频聚合成云图也算是……</p>
+<h3>文献管理</h3>
+<hr />
+<p>通常院校都购买机构授权，如<a href="https://www.endnote.com/">EndNote</a>、<a href="http://www.inoteexpress.com/aegean/">NoteExpress</a>，下载亦不难找。由于大家需求多样、差异较大，本人经验有限，因此仅提供软件列举和部分简要说明。类似的知识管理软件如<a href="https://www.yinxiang.com/">印象笔记</a>、<a href="http://www.wiz.cn/">为知笔记</a>因长期不再使用，无法推荐。</p>
+<p><a href="https://www.zotero.org/"><code>Zotero</code></a>	开源工具，功能全面。支持插件、网页保存/导入（如豆瓣、维基、谷歌学术）、各类附件、文献可视化等，<a href="https://www.zotero.org/support/zh/quick_start_guide">中文简介</a></p>
+<p><a href="https://www.endnote.com/"><code>EndNote</code></a>	最常用的管理软件，一些专业有顶级课题组的库可以订阅。常从<a href="http://www.dxy.cn/bbs/board/10/2905">丁香园</a>获取汉化，<a href="https://www.luochenzhimu.com/archives/4055.html">落尘之木 X9 CHS Patch</a>。</p>
+<p><a href="http://www.inoteexpress.com/aegean/"><code>NoteExpress</code></a>	特色是层级管理与本地文件夹同步</p>
+<p><a href="https://www.mendeley.com/">Mendeley</a></p>
+<p><a href="https://www.readcube.com/">ReadCube</a>	基础版免费，强调PDF的交互管理。不过，<strong>登录必须翻墙</strong>……</p>
+<p>Papers2</p>
+<p><a href="http://www.docear.org/">Docear</a>	= <a href="http://www.jabref.org/">JabRef</a>+<a href="https://www.freeplane.org/wiki/index.php/Home">Freeplane</a>，兼具其长处。未曾尝试，借用“<a href="https://www.jianshu.com/u/5c88bc0162b9">砖工在简书</a>”同学的<a href="https://www.jianshu.com/p/63b72c18427c">使用心得</a>。</p>
+<p><a href="http://www.notefirst.com/">NoteFirst</a> | <a href="http://elearning.cnki.net/">CNKI E-Study</a> | <a href="http://refer.medlive.cn/">医学文献王</a></p>
+<p>RefWorks</p>
+<p>Qnotero</p>
+<p><a href="http://www.jabref.org/">Jabref</a>	开源引文管理，与LaTex对接兼容极好。</p>
+<h3>数学工具</h3>
+<hr />
+<p><a href="http://freemat.sourceforge.net/">FreeMat</a> | Mathematics | OriginPro</p>
+<p><a href="http://isabelle.in.tum.de/">Isabelle</a> | <a href="http://sleepace.cn/masuit/soft/tree/master/MathType%E7%89%88%E6%9C%AC%E5%A4%A7%E5%85%A8">MathType</a> | </p>
+<p>计算工厂 | </p>
+<h3>质性分析</h3>
+<hr />
+<p>AntConc、WordSmith（）、Text Statistics Analyzer</p>
+<p>ROSTCM6</p>
+<p>NVivo </p>
+<p>kh coder</p>
+<p>RQDA</p>
+<h2>附录</h2>
+<h3>PDF去水印</h3>
+<hr />
+<p>因为水印的情况较多，说明比较复杂，请见谅。简单操作可以直接看PitStop。</p>
+<p><strong>基本知识</strong></p>
+<p><strong>常见的水印</strong></p>
+<ol>
+<li>
+<p>页眉页脚有软件名、网址、QQ号等一行文字的文字型（软件如pdf打印机，有时是中央45度（如爱学术））</p>
+</li>
+<li>
+<p>页面中央或边角的logo图形的图片型</p>
+</li>
+<li>
+<p>右下角灰色暗块PDG字样的写入图片的水印</p>
+</li>
+<li>
+<p>PDF-XChange Viewer为代表的复杂对象水印</p>
+</li>
+</ol>
+<p>分辨类型可用老版本福昕编辑器（1.2/2.1/5.0）点选对象</p>
+<p><strong>PDF类型</strong></p>
+<ol>
+<li><code>扫描版</code>即<strong>纯图片</strong>构成的PDF，通常一页一图。</li>
+<li><code>文字版</code>即文字构成的PDF，图文混排也属于此类。</li>
+</ol>
+<p><strong>常用方法</strong></p>
+<p>导出图片、PitStop、pdftoy流过滤、去水印软件（如<a href="http://www.liyusoft.com/pdfwr">PDF水印清理专家</a>，<a href="https://www.52pojie.cn/thread-512223-1-1.html">PDF Watermark Revmoer</a>）等</p>
+<p>由于去水印软件通常收费，功能有限或无破解，一般推荐使用<a href="http://www.52read.org/forum.php?mod=viewthread&amp;tid=687"><code>Acrobat+PitStop</code></a></p>
+<p><strong>PitStop</strong> 可解决<code>扫描版</code>的<code>1</code> <code>2</code> <code>4</code>， <code>文字版</code>的<code>1</code> <code>2</code> </p>
+<ul>
+<li>可选矩形或绘制多边形区域、清除对象的类型、是否包含重叠</li>
+<li>类 2 若是文字版下面盖图，区域选定后移除对象只选图像即可。</li>
+<li>类 4 若是极为复杂对象可能需要勾选重叠并多次操作，会导致重叠的文字消失，因此对<code>文字版</code>的效果不一定好。</li>
+</ul>
+<p><code>选择区域 → 全局更改 → 标准 → 移除 → 移除图形 → 吸管图标选择从选区获取区域 → 运行</code></p>
+<p><strong>导出图片</strong> 可解决<code>扫描版</code>的<code>1</code> <code>2</code> <code>3</code></p>
+<ul>
+<li>类 1 导出图片即可</li>
+<li>类 2 导出后若是大量相同图片可用文件查重批量删除</li>
+<li>类 3 导出后用<code>ComicEnhancerPro</code>批量提高图片亮度，再适当提高伽玛修补表现</li>
+<li>类 3 若是彩色<code>ComicEnhancerPro</code> <code>通道</code>→<code>替换</code>能指定阀值替换。也可用<code>通道</code>→<code>通道互换</code>、<code>通道混合</code>先处理。</li>
+<li>导出原图发现每页多图拼成的，可以用<code>PDF补丁丁</code>的尝试合并相同页面的图片。</li>
+</ul>
+<p><code>用`PDF补丁丁`导出图片后重新封装，也可用`FreePic2Pdf`封装。</code></p>
+<h3>对开拍照书</h3>
+<hr />
+<p><strong>基本流程</strong>：<code>去边</code>/<code>对切</code>→<code>去灰度阴影</code>→<code>纠斜</code>→<code>去边</code>→<code>居中对齐</code></p>
+<ol>
+<li>对切前，边缘有较大黑边/色块、图片均大致相同容易去除，可批量裁剪去边。反之则对切后去边</li>
+</ol>
+<p>也可以用<code>ComicEnhancerPro</code>（下文缩略为<code>CEP</code>）的手动选区范围。</p>
+<ol>
+<li>
+<p>对切大致相同用分割软件；左右不同，可尝试用<code>晨晨双页扫描图片分割器</code></p>
+</li>
+<li>
+<p>去灰度阴影用<code>CEP</code>调整色阶、亮度/伽马或曲线使图片接近纯黑白</p>
+</li>
+<li>
+<p><code>CEP</code>纠斜：若图片情况较好，不需再次去边可直接同时设置开本和居中对齐。</p>
+</li>
+</ol>
+<p>若不好，则编辑后再居中对齐。（软件都不太好，仅<a href="https://www.lanzous.com/i3ery5i">Hornil StylePix 1.14.5</a> 似乎可用）</p>
+<ol>
+<li>
+<p>以上均可通过<code>PhotoShop</code>录制动作实现，取决于习惯…不过一般人是不会想处理这种书的</p>
+</li>
+<li>
+<p>PDF可用<code>Acrobat</code>+<code>Quite Imposing</code>裁剪后导出，或省事不再处理直接看。</p>
+</li>
+</ol>
+<h3>搜索概要</h3>
+<hr />
+<pre><code>由于不可避免地导致盗版，本文**点到为止**，详细参考打包文件内可能附带的Firefox书签或doc。
+</code></pre>
+
+<p>常用网站</p>
+<p><a href="https://www.jiumodiary.com/">鸠摩搜书</a>	目前最全面的聚合搜索</p>
+<p><a href="https://www.yunpanjingling.com/">云盘精灵</a>	百度网盘搜索	<em>收费</em>	但效果很好，适合已知有百度网盘资源但加密或者失效的。多数资源1豆，1豆最贵3分。</p>
+<p><a href="http://xueshu.baidu.com/">百度学术</a>	会显示文献免费地址，如果有的话。</p>
+<p><a href="http://www.xilinjie.com/">西林街</a>	聚合搜索	<em>收费</em>	效果一般，对微盘爱问的结果比较好，适合已知可能有的。免费只能看有限页面。</p>
+<p><a href="http://magnet.chongbuluo.com/">虫部落</a>	多个搜索网站的聚合搜索。<a href="https://www.panc.cc/">胖次</a>好用的时候常用，切换方便，但现在意义不大。</p>
+<p>Kindle</p>
+<p><a href="https://www.mlook.mobi">mlook</a>	邀请码，有<a href="https://chrome.google.com/webstore/detail/douban2mlook/pklegbobemfenpfammapobkcoippinhp">豆瓣扩展</a>，普通用户<code>1:00-8:00</code>4本 <code>8:00-24:00</code>2本。</p>
+<p><a href="http://magnet.chongbuluo.com/">Readfree</a>	邀请码，有<a href="https://chrome.google.com/webstore/detail/readfree-%E4%BC%A0%E9%80%81%E9%97%A8/nnijmebffagpcclklhofdkjeimnmckjp">豆瓣扩展</a>，签到积分制。每个文件下载消耗1积分，充值20元可得2000积分。</p>
+<p>均为Chorme扩展，Firefox可以自己注册账号上传签名后安装自用（mlook的提醒功能会失效）</p>
+<p><strong>通常鸠摩搜书没有即可放弃。</strong></p>
+<p>无结果想要深入搜索，请确认图书是否有电子版：</p>
+<p><a href="http://www.ucdrs.superlib.net/">图书馆参考联盟</a>有结果 = 可能有超星包库版	<a href="https://www.amazon.cn/Kindle%E5%95%86%E5%BA%97/b/ref=sd_allcat_ks?ie=UTF8&amp;node=116087071">亚马逊Kindle商店</a>有结果 = 可能有azw3/epub/mobi 版</p>
+<p>之后在搜索引擎以<code>书名+空格+格式</code> 搜索，格式前也可以加<code>.</code>  如<code>信息社会的知识劳工 pdf</code>	<code>第二语言学习 .azw3</code> </p>
+<p>求特定版本或更详细搜索也可以加入出版社、年份、译者等信息 同样用空格隔开。</p>
+<p>建议使用多个引擎搜索，可用<a href="https://greasyfork.org/zh-CN/scripts/27752-searchenginejump-%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E5%BF%AB%E6%8D%B7%E8%B7%B3%E8%BD%AC">搜索引擎快捷跳转</a> 或 <a href="http://www.wox.one/">Wox</a>等脚本或软件提高效率。</p>
+<p>超星包库有的书，有些会有SSID或者详细信息，加上再搜可能提高命中率，如<code>传统作曲技法 赵晓生_11159387</code></p>
+<p><strong>SSID</strong>可用<a href="https://www.lanzous.com/i3yyu7i">浏览器脚本</a>在图书馆参考联盟/读秀显示，要求浏览器已有脚本管理器如<a href="https://tampermonkey.net/">Tampermonkey</a></p>
+<hr />
+<p><strong>古籍方志</strong></p>
+<p><a href="https://www.shuge.org/">书格</a> | <a href="http://lcd.ccnu.edu.cn/?tdsourcetag=s_pctim_aiomsg#/index">中国地方志数据库</a> | <a href="http://www.nlc.cn/newgjzt/">海外中国古籍专题站</a> | <a href="http://www.ancientbooks.cn/#">籍合网</a> | <a href="https://weibo.com/ttarticle/p/show?id=2309404181872988011638">汉学开放获取学术资源集</a>（网站列举）</p>
+<p><strong>图书馆数字馆藏</strong></p>
+<p>通常到当地市图书馆办张读者证即可使用各类数字馆藏服务，若想足不出户：</p>
+<p><a href="http://www.zjlib.cn/">浙江省图书馆</a> 支付宝搜索其生活号注册 <a href="http://www.gxlib.org.cn/">广西壮族自治区图书馆</a> 在线手机号注册</p>
+<hr />
+<h3>附件简要说明</h3>
+<p><a href="https://www.lanzous.com/b706726/">下载地址</a>	<strong>密码</strong>	<code>7pmx</code></p>
+<p><strong>书签</strong></p>
+<p>Firefox导出的Html书签，直接打开即可。</p>
+<p>这是作者目前使用的书签，<strong>个人痕迹明显、杂乱不全</strong>……还有太多未整理，没精力添加进去了（咱现在都是搜书签）</p>
+<p>特色是包含还算全的在线漫画站点、下载生肉的博客；能在线看的期刊、数据可视化和一点儿开放教科书（Open TextBook）</p>
+<p>有个收费文件夹仅为围观和信息整理，请勿购买。</p>
+<p><strong>文献资源小列表</strong> </p>
+<p>若校外需要知网，可用网上公开账号或者购买XX图书馆获取入口。注意此列表除知网外均已失效。</p>
+<p><strong>台灣各大學論文下載</strong></p>
+<p>文档较旧，不保证方法链接全部可靠</p>
+<p><strong>显示SSID by maer.user 1.3.8.js</strong></p>
+<p>即搜索概要提到的SSID脚本，文本编辑器打开复制到脚本管理器的新建脚本，保存即可。</p>
+<p><strong>其他</strong></p>
+<p><strong>PdgAndroid.apk</strong>	即<code>閑讀書Pdg</code></p>
+<p>中國（漢學）研究開放獲取學術資源集	即<a href="https://weibo.com/ttarticle/p/show?id=2309404181872988011638">上文链接</a>的doc版本</p>
+<p><strong>MarkdownPad2 Head</strong>	即<a href="http://markdownpad.com/">MarkdownPad2</a>的注册机与输出侧栏需要的HTML Head代码。</p>
+<p><strong>漫画</strong></p>
+<p>既然说到漫画，那说说简单的美漫生肉下载。</p>
+<p>除了书签里的站点外，常见发布是<code>0-Day种子</code>，均为各扫组最新打包合集，</p>
+<p>如<code>0-Day Week</code>  <code>Novus Week</code> <code>Hitlist Week</code> <code>DC Week</code> <code>Marvel Week</code> <code>Image Week</code> <code>INDIE Week</code>等</p>
+<p>单个作品可以在谷歌、种子平台用关键词搜索：<code>漫画名+格式</code> 可选<code>形态</code> <code>发布组</code> <code>年份</code> 以得出正确发布文件名</p>
+<p>如 <code>Blacksad digital .cbr</code> → <code>Blacksad (2010) (digital) (Son of Ultron II-Empire).cbr</code></p>
+<p>搜索正确文件名结果会比较可靠，会有单独种子、种子包含或网盘下载等方式，逐一尝试即可。</p>
+<p>中文扫漫有点类似，举个例子<code>[Dragon.Ball 龍珠完全版][鳥山明][文傳][C.C][34完+2]</code>能总结出来吗？</p>
+<p>明白后，以后用百度、云盘精灵可能会有比较有趣的结果，也可以用我的<a href="https://cse.google.com/cse?cx=016810457090315640577:l1mpxg5rvqe">Google CSE</a>。不过，搜索并非关键。</p>
+<p>什么 你说<a href="https://fr.wikipedia.org/wiki/Bande_dessin%C3%A9e">BD</a>生肉？文件名不再有用？那么<a href="https://www.yggtorrent.gg">Yggtorrent</a>适合你，也可以仔细看我的书签。</p>
+<p>备注</p>
+<p>种子建议用迅雷以外客户端如<a href="https://www.qbittorrent.org/">qBittorrent</a>、<a href="https://www.tixati.com/">tixati</a>添加<a href="https://github.com/ngosang/trackerslist">Tracker 1</a>或<a href="https://torrents.me/tracker-list/">Tracker 2</a> 下载。</p>
+<p>种子搜索有<a href="https://torrentz2.eu">Torrentz2</a>、<a href="https://btdb.eu">BTDB</a>等很多；有些资源<a href="https://115.com/">115</a>可以秒离线，就是太贵；偶尔可以试试谷歌加入site:vk.com。</p>
+<p>安卓APP <a href="https://soft.shouji.com.cn/down/1550728.html">异次元</a>  可以添加图源聚合，详见页面评论</p>
+<p>本文PC下载以官网和国内软件站为主，安卓下载以GooglePlay、酷安与手机乐园为主。…本想放在开头但好难看。</p>
+<p>其实可以看出来无论是图书还是漫画（其实还有电影），正确的文件名格式很重要，但为什么搜索不是关键呢？</p>
+<p>因为通过命名逻辑可以反推出发布源和集散地。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
