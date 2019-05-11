@@ -23,40 +23,44 @@
 
 
 
-### 速览
+## 速览     
 
 这么长怎么可能看完！于是有了速览版，点击链接可进入下载页。（`Typora` =`右键`-`打开链接`）
 
-#### PC
+### PC
 
-> 图书	[福昕阅读器](https://www.foxitsoftware.cn/products/reader/)（参考完整版）	[UnicornViewer](https://www.lanzous.com/i3zqntg) | [Calibre](https://calibre-ebook.com/) | [Mobipocket Reader](http://www.skycn.com/soft/appid/28141.html)
+> 图书	[福昕阅读器](https://www.foxitsoftware.cn/products/reader/)（参考下文）	[UnicornViewer](https://www.lanzous.com/i3zqntg)	[Calibre](https://calibre-ebook.com/)	[Mobipocket Reader](http://www.skycn.com/soft/appid/28141.html)
 
-> 漫画	[HoneyView](http://www.bandisoft.com/honeyview/) | [ComicsViewer](http://www.cnblogs.com/stronghorse/)
+> 漫画	[HoneyView](http://www.bandisoft.com/honeyview/)	[ComicsViewer](http://www.cnblogs.com/stronghorse/)
 
-#### Android
+### Android
 
-> 图书	[Adobe Reader](https://www.coolapk.com/apk/com.adobe.reader) | [静读天下](https://www.coolapk.com/apk/com.flyersoft.moonreaderp) | [閑讀書Pdg](https://www.lanzous.com/i3zqnkh)
+> 图书	[Adobe Reader](https://www.coolapk.com/apk/com.adobe.reader)	[KOreader](https://github.com/koreader/koreader/wiki/KOReader%E7%BB%B4%E5%9F%BA)	[静读天下](https://www.coolapk.com/apk/com.flyersoft.moonreaderp)	[閑讀書Pdg](https://www.lanzous.com/i3zqnkh)
 
-> 漫画	[ComicScreen](https://play.google.com/store/apps/details?id=com.viewer.comicscreen) | [ComicRack](https://play.google.com/store/apps/details?id=com.cyo.comicrack.viewer.free) | [SideBooks](https://play.google.com/store/apps/details?id=jp.co.tokyo_ip.SideBooks&hl=en&rdid=jp.co.tokyo_ip.SideBooks)
+> 漫画	[ComicScreen](https://play.google.com/store/apps/details?id=com.viewer.comicscreen)	[ComicRack](https://play.google.com/store/apps/details?id=com.cyo.comicrack.viewer.free)
 
 
 
 ### 补充
 
+------
+
 **PC**
 
-图书	[Acrobat](https://pan.baidu.com/s/1MhHNS1ixn5ijj1hwWh4PGQ)（[Pitstop](http://www.52read.org/forum.php?mod=viewthread&tid=687) | [Quite Imposing](http://www.cnprint.org/bbs/thread/77/285247/)）	[ABBYY PDF Transformer+](https://www.52pojie.cn/thread-831415-1-1.html)
+图书	[Acrobat](https://pan.baidu.com/s/1MhHNS1ixn5ijj1hwWh4PGQ)（[Pitstop](http://www.52read.org/forum.php?mod=viewthread&tid=687)	[Quite Imposing](http://www.cnprint.org/bbs/thread/77/285247/)）	[ABBYY PDF Transformer+](https://www.52pojie.cn/thread-831415-1-1.html)
 
-图书	[PDF补丁丁](https://pdfpatcher.cnblogs.com/) | [PDF-XChange Viewer](https://www.tracker-software.com/product/pdf-xchange-viewer)  | [SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader.html) | [CAJViewer](http://cajviewer.cnki.net/) | [超星阅读器](http://ssreader.chaoxing.com/)
+图书	[PDF补丁丁](https://pdfpatcher.cnblogs.com/)	[PDF-XChange Viewer](https://www.tracker-software.com/product/pdf-xchange-viewer) 	[SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader.html)	[CAJViewer](http://cajviewer.cnki.net/)	[超星阅读器](http://ssreader.chaoxing.com/)
 
-漫画	[ComicRack](http://comicrack.cyolito.com/) | [CDisplayEx](http://www.cdisplayex.com/)	[MangaMeeya](http://soft.onlinedown.net/soft/1150480.htm)
+漫画	[ComicRack](http://comicrack.cyolito.com/)	[CDisplayEx](http://www.cdisplayex.com/)	[MangaMeeya](http://soft.onlinedown.net/soft/1150480.htm)
 
 **安卓**
 
-图书	[KOreader](https://github.com/koreader/koreader/wiki/KOReader%E7%BB%B4%E5%9F%BA) | [Kindle](https://www.amazon.cn/gp/digital/fiona/kcp-landing-page/) | [CAJViewer](http://cajviewer.cnki.net/) | [阅读](https://www.coolapk.com/apk/com.gedoor.monkeybook) | [阿帕比阅读器](http://www.apabi.cn/download/)
+图书	[Kindle](https://www.amazon.cn/gp/digital/fiona/kcp-landing-page/)	[CAJViewer](http://cajviewer.cnki.net/)	[Librera](https://librera.mobi/)	[阅读](https://www.coolapk.com/apk/com.gedoor.monkeybook)	[阿帕比阅读器](http://www.apabi.cn/download/)
 
-漫画	[PerfectViewer](https://soft.shouji.com.cn/down/21244.html) | [CDisplay](https://play.google.com/store/apps/details?id=com.progdigy.cdisplay.free)
+漫画	[PerfectViewer](https://soft.shouji.com.cn/down/21244.html)	[CDisplay](https://play.google.com/store/apps/details?id=com.progdigy.cdisplay.free)
 
+**iOS**
+漫画	[SideBooks](https://itunes.apple.com/cn/app/sidebooks/id409777225)	[iComix](https://itunes.apple.com/cn/app/icomix/id524751752)
 
 
 ### 完整版本
