@@ -23,17 +23,17 @@
 
 
 
-## 速览     
+### 速览     
 
 这么长怎么可能看完！于是有了速览版，点击链接可进入下载页。（`Typora` =`右键`-`打开链接`）
 
-### PC
+##### PC
 
 > 图书	[福昕阅读器](https://www.foxitsoftware.cn/products/reader/)（参考下文）	[UnicornViewer](https://www.lanzous.com/i3zqntg)	[Calibre](https://calibre-ebook.com/)	[Mobipocket Reader](http://www.skycn.com/soft/appid/28141.html)
 
 > 漫画	[HoneyView](http://www.bandisoft.com/honeyview/)	[ComicsViewer](http://www.cnblogs.com/stronghorse/)
 
-### Android
+##### Android
 
 > 图书	[Adobe Reader](https://www.coolapk.com/apk/com.adobe.reader)	[KOreader](https://github.com/koreader/koreader/wiki/KOReader%E7%BB%B4%E5%9F%BA)	[静读天下](https://www.coolapk.com/apk/com.flyersoft.moonreaderp)	[閑讀書Pdg](https://www.lanzous.com/i3zqnkh)
 
@@ -41,7 +41,7 @@
 
 
 
-### 补充
+##### 补充
 
 ------
 
