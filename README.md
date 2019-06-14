@@ -10,7 +10,7 @@
 
 [`署名-非商业性使用-相同方式共享`](http://creativecommons.net.cn/licenses/licenses_exp/)
 
-[`蓝奏云更新地址`](https://www.lanzous.com/b597086)
+[`蓝奏云更新地址`](https://www.lanzous.com/b597086)  [酷安应用集](https://www.coolapk.com/album/12176502)
 
 ```
 0.2 更新说明
