@@ -48,7 +48,7 @@
 
 **PC**
 
-图书　[Acrobat](https://pan.baidu.com/s/1MhHNS1ixn5ijj1hwWh4PGQ)([Pitstop](https://www.jb51.net/softs/624889.html)+[Quite Imposing](http://www.cnprint.org/bbs/thread/77/285247/))　[ABBYY PDF Transformer+](https://www.52pojie.cn/thread-831415-1-1.html)　[QuickLook](https://github.com/QL-Win/QuickLook)
+图书　[Acrobat](https://pan.baidu.com/s/1MhHNS1ixn5ijj1hwWh4PGQ) ([Pitstop](https://www.jb51.net/softs/624889.html)+[Quite Imposing](http://www.cnprint.org/bbs/thread/77/285247/))　[ABBYY PDF Transformer+](https://www.52pojie.cn/thread-831415-1-1.html)　[QuickLook](https://github.com/QL-Win/QuickLook)
 
 图书　[PDF补丁丁](https://pdfpatcher.cnblogs.com/)　[PDF-XChange Viewer](https://www.tracker-software.com/product/pdf-xchange-viewer)　[SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader.html)　[WinDjView](https://windjview.sourceforge.io/)　[CAJViewer](http://cajviewer.cnki.net/)　[超星阅读器](http://ssreader.chaoxing.com/)
 
