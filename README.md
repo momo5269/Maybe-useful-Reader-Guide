@@ -1,9 +1,7 @@
 ## 更新
 
 2019-06-15 更新部分失效链接并做出说明；在线测试升级；重新提供HTML，其目录并非全部内容。
-
-
-
+　　
 
 ## 说明
 
@@ -23,7 +21,7 @@
   4.本文链接近800个，非官网可能不稳定，失效请见谅。但有名字基本搜得到。
 ```
 
-
+　　
 
 ## 速览
 
@@ -41,11 +39,9 @@
 
 > 其他　[ComicScreen](https://play.google.com/store/apps/details?id=com.viewer.comicscreen)　[酷安应用集](https://www.coolapk.com/album/12176502)
 
-
+　　
 
 ### 补充
-
-------
 
 **PC**
 
@@ -60,10 +56,7 @@
 图书　[Kindle](https://www.amazon.cn/gp/digital/fiona/kcp-landing-page/)　[CAJViewer](http://cajviewer.cnki.net/)　[Librera](https://librera.mobi/)　[阅读](https://www.coolapk.com/apk/com.gedoor.monkeybook)　[閑讀書](https://www.lanzous.com/i3zqnkh)　[阿帕比阅读器](http://www.apabi.cn/download/)
 
 漫画　[PerfectViewer](https://soft.shouji.com.cn/down/21244.html)　[CDisplay](https://play.google.com/store/apps/details?id=com.progdigy.cdisplay.free)　[ComicRack](https://play.google.com/store/apps/details?id=com.cyo.comicrack.viewer.free)
-
-
-
-
+　　
 
 ## 完整版
 
